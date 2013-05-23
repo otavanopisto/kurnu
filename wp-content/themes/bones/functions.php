@@ -171,5 +171,28 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+/************* BREADCRUMB *****************/
+
+// Breadcrumbs for Pages, Categories and Custom Types
+function the_breadcrumb() {
+  echo '<div class="sixteencol first breadcrumb-container">';
+  if (!is_home()) {
+    echo '<a href="';
+    echo get_option('home');
+    echo '">';
+    bloginfo('name');
+    echo "</a> » ";
+    if (is_category() || is_single()) {
+      the_category('title_li=');
+      if (is_single()) {
+        echo " » ";
+        the_title();
+      }
+    } elseif (is_page()) {
+      echo the_title();
+    }
+  }
+  echo '</div>';
+}
 
 ?>

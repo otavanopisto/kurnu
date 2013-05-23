@@ -4,9 +4,11 @@
 
 				<div id="inner-content" class="wrap clearfix">
         
+          <?php the_breadcrumb(); ?>
+        
           <?php get_sidebar('left'); ?>
 
-					<div id="main" class="sevencol first clearfix" role="main">
+					<div id="main" class="eightcol first clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -19,12 +21,11 @@
 										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());
 									?></p>
 
-
 							</header> <!-- end article header -->
 
 							<section class="entry-content clearfix" itemprop="articleBody">
 								<?php the_content(); ?>
-						</section> <!-- end article section -->
+						  </section> <!-- end article section -->
 
 							<footer class="article-footer">
 								<?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?>
@@ -37,17 +38,17 @@
 
 						<?php endwhile; else : ?>
 
-								<article id="post-not-found" class="hentry clearfix">
-									<header class="article-header">
-										<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-									</header>
-									<section class="entry-content">
-										<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-									</section>
-									<footer class="article-footer">
-											<p><?php _e("This is the error message in the page.php template.", "bonestheme"); ?></p>
-									</footer>
-								</article>
+							<article id="post-not-found" class="hentry clearfix">
+								<header class="article-header">
+									<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
+								</header>
+								<section class="entry-content">
+									<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
+								</section>
+								<footer class="article-footer">
+										<p><?php _e("This is the error message in the page.php template.", "bonestheme"); ?></p>
+								</footer>
+							</article>
 
 						<?php endif; ?>
 
