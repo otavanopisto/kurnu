@@ -1,0 +1,7 @@
+Subject: Käyttäjätunnukset on aktivoitu
+
+Terve {USERNAME},
+
+Ylläpitäjä on aktivoinut käyttäjätunnuksesi "{SITENAME}" sivustolla. Voit kirjautua sisään.
+
+{EMAIL_SIG}
