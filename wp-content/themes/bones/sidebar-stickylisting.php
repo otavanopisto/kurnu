@@ -13,7 +13,7 @@
 //   $Q = new GetPostsQuery();
   
 //   $results = $Q->get_posts($q_args);
-  $the_query = new WP_Query(array('post_type' => 'any', 'meta_key' => 'sticky'));
+  $the_query = new WP_Query(array('post_type' => 'any', 'meta_key' => 'sticky', 'meta_value' => '1'));
   // The Loop
   while ( $the_query->have_posts() ) :
   $the_query->the_post();
