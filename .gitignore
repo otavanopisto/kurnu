@@ -15,3 +15,7 @@ sitemap.xml.gz
 /.settings
 /.buildpath
 /.project
+*.DS_Store
+/.externalToolBuilders
+/forum/cache
+*.sass-cache
