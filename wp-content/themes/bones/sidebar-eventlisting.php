@@ -1,5 +1,15 @@
 <?php
-  $the_query = new WP_Query( array ( 'post_type' => 'event', 'posts_per_page' => 5));
+  $today = date('Y-m-d');
+  $the_query = new WP_Query( array ( 'post_type' => 'event', 'posts_per_page' => 5, 'orderby' => 'meta_value', 'meta_key' => 'eventdate', 'order' => 'ASC', 
+    'meta_query' => array(
+        array(
+            'key' => 'eventdate',
+            'value' => $today,
+            'type' => 'date',
+            'compare' => '>='
+        )
+    )
+  ));
 
   if ( $the_query->have_posts()) {
     echo '<div class="event-listing-wrapper block bright">';      

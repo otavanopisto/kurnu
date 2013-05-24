@@ -1,18 +1,4 @@
 <?php
-//   require_once('../../../plugins/custom-content-type-manager/includes/GetPostsQuery.php');
-  
-//   $q_args = array();
-//   $search_parameters_str = $instance['parameters'];
-//   parse_str($search_parameters_str, $q_args);
-  
-//   //print_r($q_args); exit;
-//   if (isset($q_args['include']) && empty($q_args['include'])) {
-//     unset($q_args['include']);
-//   }
-  
-//   $Q = new GetPostsQuery();
-  
-//   $results = $Q->get_posts($q_args);
   $the_query = new WP_Query(array('post_type' => 'any', 'meta_key' => 'sticky', 'meta_value' => '1'));
 
   if ( $the_query->have_posts()) {
