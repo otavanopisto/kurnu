@@ -11,11 +11,11 @@
   $the_query->the_post();
   $custom_value = get_post_custom_values('eventdate', get_the_ID());
   $originalDate = $custom_value[0];
-  $formattedDate = date("d.m", strtotime($originalDate));
+  $formattedDate = date("d.m.", strtotime($originalDate));
   echo '<div class="siesta-listing-container">';
   echo '<ul>';
-  echo '<li class="sidebar-siesta-row">';
-  echo '<div class="sidebar-siesta-row-wrapper">';
+  echo '<li class="sidebar-siesta">';
+  echo '<div class="sidebar-siesta-row">';
   echo '<div class="sidebar-siesta-date">' . $formattedDate . '</div>';
   echo '<div class="sidebar-siesta-title">' . get_the_title() . '</div>';
   echo '</div>';

@@ -56,9 +56,47 @@ CUSTOM BLOCK STYLES
     }
     a {
      color:#fff;
+     &:hover {
+       color:#000;
+     }
     }
   }
 }
+
+/*********************
+EVENTS BLOCK STYLES
+*********************/
+.event-listing-container {
+  
+  .sidebar-event-row {
+    clear:both;
+  }
+  
+  .sidebar-event-date {
+    width:40px;
+    height:20px;
+    background-color:#fff;
+    color:#ff9900;
+    border-radius:2px;
+    padding:3px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    float:left;
+    margin-right:5px;
+  }
+  
+  .sidebar-event-title {
+    font-size:1.1em;
+    font-weight:bold;
+    
+    a {
+      text-decoration:none;
+    }
+  }
+}
+
+
 
 /********************
 WORDPRESS BODY CLASSES

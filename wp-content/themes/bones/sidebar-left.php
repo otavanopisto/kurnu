@@ -1,6 +1,5 @@
 				<div id="sidebar-left" class="sidebar fivecol first clearfix" role="complementary">
         
-
           <?php include 'sidebar-siestalisting.php'; ?>
     
           <?php include 'sidebar-eventlisting.php'; ?>

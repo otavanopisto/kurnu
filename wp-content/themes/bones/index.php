@@ -17,7 +17,7 @@
               $the_query->the_post();
               $custom_value = get_post_custom_values('eventdate', get_the_ID());
               $originalDate = $custom_value[0];
-              $formattedDate = date("d.m", strtotime($originalDate));
+              $formattedDate = date("d.m.", strtotime($originalDate));
               echo '<div class="announcement-wrapper block light">';
               echo '<div class="announcement-row">';
               echo '<div class="announcement-date">' . $formattedDate . '</div>';

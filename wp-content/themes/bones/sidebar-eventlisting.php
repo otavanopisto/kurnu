@@ -11,11 +11,11 @@
   $the_query->the_post();
   $custom_value = get_post_custom_values('eventdate', get_the_ID());
   $originalDate = $custom_value[0];
-  $formattedDate = date("d.m", strtotime($originalDate));
+  $formattedDate = date("d.m.", strtotime($originalDate));
   echo '<div class="event-listing-container">';
   echo '<ul>';
-  echo '<li class="sidebar-event-row">';
-  echo '<div class="sidebar-event-row-wrapper">';
+  echo '<li class="sidebar-event">';
+  echo '<div class="sidebar-event-row">';
   echo '<div class="sidebar-event-date">' . $formattedDate . '</div>';
   echo '<div class="sidebar-event-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></div>';
   echo '</div>';
