@@ -14,7 +14,7 @@
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-						<article class="block" id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+						<article class="block white" id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
 							<header class="article-header">
 

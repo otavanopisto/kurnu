@@ -259,21 +259,25 @@ BACKGROUNDS
 
 .dark {
   background-color:#626161;
-  box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow:0px 0px 15px rgba(0,0,0,0.4);
 }
   
 .light {
   background-color:#f5f5f5;
-/*   box-shadow:0px 0px 15px rgba(0,0,0,0.1); */
+  box-shadow:0px 0px 15px rgba(0,0,0,0.3);
+}
+
+.white {
+  background-color:#ffffff;
 }
 
 .bright-1 { /* Orange */
   background-color:#ff9900;
-  box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow:0px 0px 15px rgba(0,0,0,0.4);
 }
 
 .bright-2 { /* Blue */
   background-color:#0099ff;
-  box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow:0px 0px 15px rgba(0,0,0,0.4);
 }
 

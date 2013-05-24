@@ -21,6 +21,10 @@ body {
 	line-height: 1.5;
 	color: #565656;
 	margin:0 5px;
+	background-color:#172a0a;
+	background-image:url('../images/main-bg.jpg');
+	background-repeat:no-repeat;
+	background-position:0px -600px;
 }
 
 /*********************
@@ -29,7 +33,7 @@ ARTICLE BLOCK STYLES
 
 article.block {
   padding:10px 15px;
-  margin:5px 2px;
+  margin:1px 2px;
   
   h1,h2 {
     margin-top:0;
