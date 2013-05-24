@@ -1,5 +1,16 @@
 <?php
-  $the_query = new WP_Query( array ( 'post_type' => 'siesta'));
+//   $the_query = new WP_Query( array ( 'post_type' => 'siesta'));
+  $today = date('Y-m-d');
+  $the_query = new WP_Query( array ( 'post_type' => 'siesta', 'posts_per_page' => 1, 'orderby' => 'meta_value', 'meta_key' => 'eventdate', 'order' => 'ASC',
+      'meta_query' => array(
+          array(
+              'key' => 'eventdate',
+              'value' => $today,
+              'type' => 'date',
+              'compare' => '>='
+          )
+      )
+  ));
   // The Loop
   while ( $the_query->have_posts() ) :
   $the_query->the_post();
