@@ -264,9 +264,16 @@ BACKGROUNDS
   
 .light {
   background-color:#f5f5f5;
+/*   box-shadow:0px 0px 15px rgba(0,0,0,0.1); */
 }
 
-.bright {
+.bright-1 { /* Orange */
   background-color:#ff9900;
+  box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+}
+
+.bright-2 { /* Blue */
+  background-color:#0099ff;
+  box-shadow:0px 0px 15px rgba(0,0,0,0.2);
 }
 

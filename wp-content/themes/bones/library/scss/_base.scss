@@ -24,6 +24,20 @@ body {
 }
 
 /*********************
+ARTICLE BLOCK STYLES
+*********************/
+
+article.block {
+  padding:10px 15px;
+  margin:5px 2px;
+  
+  h1,h2 {
+    margin-top:0;
+  }
+  
+}
+
+/*********************
 CUSTOM BLOCK STYLES
 *********************/
 
@@ -49,7 +63,19 @@ CUSTOM BLOCK STYLES
      color:#fff;
     }
   }
-  &.bright {
+  &.bright-1 {
+    color:#fff;
+    h3 {
+     color:#fff;
+    }
+    a {
+     color:#fff;
+     &:hover {
+       color:#000;
+     }
+    }
+  }
+  &.bright-2 {
     color:#fff;
     h3 {
      color:#fff;
@@ -66,6 +92,7 @@ CUSTOM BLOCK STYLES
 /*********************
 EVENTS BLOCK STYLES
 *********************/
+
 .event-listing-container {
   
   .sidebar-event-row {
@@ -97,7 +124,40 @@ EVENTS BLOCK STYLES
   }
 }
 
+/*********************
+ANNOUNCEMENT BLOCK STYLES
+*********************/
 
+.announcement-wrapper {
+  
+  .announcement-row {
+    margin-bottom:5px;
+  }
+  
+  .announcement-date {
+    width:40px;
+    height:20px;
+    background-color:#fff;
+    color:#0099ff;
+    border-radius:2px;
+    padding:2px 4px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    float:left;
+    margin-right:10px;
+  }
+  
+  .announcement-title {
+    font-size:1.1em;
+    font-weight:bold;
+    padding:1px 0;
+    
+    a {
+      text-decoration:none;
+    }
+  }
+}
 
 /********************
 WORDPRESS BODY CLASSES
