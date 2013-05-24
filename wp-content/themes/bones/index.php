@@ -11,7 +11,18 @@
 					<div id="main" class="sevencol clearfix" role="main">
             
             <?php
-              $the_query = new WP_Query( array ( 'post_type' => 'announcement'));
+              $today = date('Y-m-d');
+              $the_query = new WP_Query( array ( 'post_type' => 'announcement', 'posts_per_page' => 3, 'orderby' => 'meta_value', 'meta_key' => 'eventdate', 'order' => 'ASC',
+                  'meta_query' => array(
+                      array(
+                          'key' => 'eventdate',
+                          'value' => $today,
+                          'type' => 'date',
+                          'compare' => '>='
+                      )
+                  )
+              ));
+//               $the_query = new WP_Query( array ( 'post_type' => 'announcement'));
               // The Loop
               while ( $the_query->have_posts() ) :
               $the_query->the_post();
