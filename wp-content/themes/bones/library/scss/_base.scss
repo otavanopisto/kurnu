@@ -69,7 +69,7 @@ EVENTS BLOCK STYLES
 .event-listing-container {
   
   .sidebar-event-row {
-    clear:both;
+    margin-bottom:5px;
   }
   
   .sidebar-event-date {
@@ -78,17 +78,18 @@ EVENTS BLOCK STYLES
     background-color:#fff;
     color:#ff9900;
     border-radius:2px;
-    padding:3px;
+    padding:2px 4px;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     float:left;
-    margin-right:5px;
+    margin-right:10px;
   }
   
   .sidebar-event-title {
     font-size:1.1em;
     font-weight:bold;
+    padding:1px 0;
     
     a {
       text-decoration:none;
