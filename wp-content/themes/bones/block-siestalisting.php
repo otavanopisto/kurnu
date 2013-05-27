@@ -13,7 +13,6 @@
 
   if ( $the_query->have_posts()) {
     echo '<div class="siesta-listing-wrapper block light">';
-    echo '<h3 class="siesta-column-title">Siestalla t&auml;n&auml;&auml;n</h3>';
   }
 
   // The Loop
@@ -22,11 +21,16 @@
   $custom_value = get_post_custom_values('eventdate', get_the_ID());
   $originalDate = $custom_value[0];
   $formattedDate = date("d.m.", strtotime($originalDate));
+  if ( $originalDate == $today) {
+    echo '<h3 class="siesta-column-title">Siestalla t&auml;n&auml;&auml;n</h3>';
+  }else{
+    echo '<h3 class="siesta-column-title">Siestalla ' . $formattedDate . '</h3>';    
+  }
   echo '<div class="siesta-listing-container">';
   echo '<ul>';
   echo '<li class="sidebar-siesta">';
   echo '<div class="sidebar-siesta-row">';
-  echo '<div class="sidebar-siesta-date">' . $formattedDate . '</div>';
+//   echo '<div class="sidebar-siesta-date">' . $formattedDate . '</div>';
   echo '<div class="sidebar-siesta-title">' . get_the_title() . '</div>';
   echo '</div>';
   echo '<div class="sidebar-siesta-row">';
