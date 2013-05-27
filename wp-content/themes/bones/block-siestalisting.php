@@ -31,7 +31,7 @@
   echo '<li class="sidebar-siesta">';
   echo '<div class="sidebar-siesta-row">';
 //   echo '<div class="sidebar-siesta-date">' . $formattedDate . '</div>';
-  echo '<div class="sidebar-siesta-title">' . get_the_title() . '</div>';
+  echo '<div class="sidebar-siesta-title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></div>';
   echo '</div>';
   echo '<div class="sidebar-siesta-row">';
   echo '<div class="sidebar-siesta-excerpt">' . get_the_excerpt() . '</div>';

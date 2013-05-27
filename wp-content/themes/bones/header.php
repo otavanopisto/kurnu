@@ -51,8 +51,19 @@
 					<!-- <p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p> -->
           
           <div class="twoway-navigation clearfix">
-            <div class="twoway-navigation-kurnu"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></div>
-            <div class="twoway-navigation-forum"><a href="/forum" rel="nofollow">Keskustelu</a></div>            
+            <div class="twoway-navigation-kurnu">
+              <a href="<?php echo home_url(); ?>" rel="nofollow">
+                <span><?php bloginfo('name'); ?></span>
+                <span class="kurnu-description">Kalevankankaankoulun verkkojulkaisu</span>
+              </a> 
+              
+            </div>
+            <div class="twoway-navigation-forum">
+              <a href="/forum" rel="nofollow">
+                <span>Keskustelu</span>
+                <span class="forum-description">Verkkolehden virallinen keskustelualue</span>
+              </a>
+            </div>            
           </div>
 
 					<!-- if you'd like to use the site description you can un-comment it below -->

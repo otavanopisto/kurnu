@@ -43,8 +43,9 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
+	background: #000;
 	border: 0;
+	padding:2px;
 	
 	ul {
 	  padding:0;
@@ -56,13 +57,15 @@ NAVIGATION STYLES
   
   		a {
   			border-bottom: 0;
+  			color:$bones-nav-blue;
   
   			/*
   			you can use hover styles here even though this size
   			has the possibility of being a mobile device.
   			*/
   			&:hover, &:focus {
-  				background-color: #dedede;
+  				background-color: #0099ff;
+  				color:#fff;
   
   			}
   		}

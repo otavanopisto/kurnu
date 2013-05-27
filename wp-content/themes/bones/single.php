@@ -22,6 +22,12 @@
 							</header> <!-- end article header -->
 
 							<section class="entry-content clearfix" itemprop="articleBody">
+                <?php 
+                  if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                    the_post_thumbnail('large');
+                  } 
+                ?>
+              
 								<?php the_content(); ?>
 							</section> <!-- end article section -->
 
