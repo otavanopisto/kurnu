@@ -36,6 +36,21 @@
 
 		<!-- drop Google Analytics Here -->
 		<!-- end analytics -->
+    
+    <!-- start vimeo embedding -->
+    
+    <script type="text/javascript">
+      (function($) {
+        $.getJSON('http://vimeo.com/api/v2/user8868748/videos.json?callback=?', {format: "json"}, function(videoList) {
+          $.getJSON('http://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/' + videoList[0].id + '&byline=false&portrait=false&callback=?', {format: "json"}, function(videoProperties) {
+            document.getElementById("vimeoRecent").innerHTML=videoProperties.html
+            //document.getElementById("vimeoDescription").innerHTML="<p><a href='" + videoList[0].url + "'>" + videoProperties.title + "</a> from <a href='" + videoProperties.author_url + "'>" + videoProperties.author_name + "</a> on <a href='http://vimeo.com'>Vimeo</a>.</p><p>" + videoProperties.description + "</p>"
+          });
+        });
+      }(jQuery));
+    </script>
+    
+    <!-- end vimeo embedding -->
 
 	</head>
 

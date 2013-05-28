@@ -252,6 +252,41 @@ STICKY BLOCK STYLES
 }
 
 /*********************
+KALIS-TV BLOCK STYLES
+*********************/
+
+.widget.widget_text {
+    background:#fff;
+  padding:10px 15px 10px 15px;
+  margin:0 2px 20px 2px;
+  font-family:$sans-serif !important;
+  font-size:1.1em;
+  
+  h4.widgettitle {
+    text-transform:uppercase;
+    font-family: $sans-serif-title;
+    font-size: $title-base-size;
+    margin:0 0 5px 0;
+    padding:0;
+    color: #222;
+    font-weight:300;
+    border:0;
+  }
+  
+}
+
+#vimeoRecent {
+  width:100%;
+  min-height:156px;
+  
+  iframe {
+    width:100%;
+    height:auto;
+  }
+  
+}
+
+/*********************
 WP-UNITED WIDGETS BLOCK STYLES
 *********************/
 
@@ -576,9 +611,7 @@ and more scalable.
   			display: block;
   			text-decoration: none;
   			padding: 5px 10px;
-  			background-color: #fff;
-  			margin:2px;
-  			color:0099ff;
+  			color:$bones-nav;
   
   			/*
   			remember this is for mobile ONLY, so there's no need
