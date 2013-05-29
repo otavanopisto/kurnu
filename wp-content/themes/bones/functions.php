@@ -175,8 +175,9 @@ function bones_wpsearch($form) {
 
 // Breadcrumbs for Pages, Categories and Custom Types
 function the_breadcrumb() {
-  echo '<div class="sixteencol first breadcrumb-container">';
+  
   if (!is_home()) {
+    echo '<div class="breadcrumb-container">';
     echo '<a href="';
     echo get_option('home');
     echo '">';
@@ -191,8 +192,9 @@ function the_breadcrumb() {
     } elseif (is_page()) {
       echo the_title();
     }
+    echo '</div>';
   }
-  echo '</div>';
+  
 }
 
 ?>

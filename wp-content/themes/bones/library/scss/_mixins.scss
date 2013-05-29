@@ -78,7 +78,8 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-$sans-serif-title: "Titillium Web", sans-serif;
+/* $sans-serif-title: "Titillium Web", sans-serif; */
+$sans-serif-title: "Open Sans", sans-serif;
 $sans-serif: "Open Sans", sans-serif;
 $serif: "Georgia", Cambria, Times New Roman, Times, serif;
 
@@ -210,9 +211,7 @@ BUTTONS
 
 .button, .button:visited {
 	font-family: $sans-serif;
-	border: 1px solid darken($link-color, 13%);
-	border-top-color: darken($link-color, 7%);
-	border-left-color: darken($link-color, 7%);
+	border: 0;
 	padding: 4px 12px;
 	color: $white;
 	display: inline-block;
@@ -223,9 +222,8 @@ BUTTONS
 	cursor: pointer;
 	margin-bottom: 20px;
 	line-height: 21px;
-	border-radius: 4px;
-	@include css-gradient($link-color, darken($link-color, 5%));
-
+	border-radius: 2px;
+	background:$bones-pink;
 
 	&:hover, &:focus {
 		color: $white;

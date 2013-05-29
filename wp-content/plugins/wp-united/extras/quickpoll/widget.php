@@ -148,6 +148,7 @@ class WPU_Forum_Polls_Widget extends WP_Widget {
 				<option value="guess" <?php if($template == 'guess'){ ?>selected="selected"<?php } ?>><?php _e('Make best guess for user', 'wp-united'); ?></option>
 				<option value="prosilver" <?php if($template == 'prosilver') { ?>selected="selected"<?php } ?>><?php _e('Force prosilver', 'wp-united'); ?></option>
 				<option value="subsilver2" <?php if($template == 'subsilver2') { ?>selected="selected"<?php } ?>><?php _e('Force subsilver2', 'wp-united'); ?></option>
+        <option value="kurnu" <?php if($template == 'kurnu') { ?>selected="selected"<?php } ?>><?php _e('Force kurnu', 'wp-united'); ?></option>
 			</select>
 		</p>
 		

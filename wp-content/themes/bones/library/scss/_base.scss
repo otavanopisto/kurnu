@@ -47,7 +47,8 @@ article.block {
     font-size:2em;
     
     a {
-      color:#000;
+      color:$link-color;
+
     }
     
   }
@@ -157,7 +158,13 @@ EVENTS BLOCK STYLES
 
 .event-listing-container {
   margin:10px 0 0 0;
+  padding:0 0 10px 0;
+  border-bottom:1px solid #f8f8f8;
   
+  &:last-child {
+    border:0;
+    padding:0;
+  }
   
   ul {
     margin:0;
@@ -172,12 +179,17 @@ EVENTS BLOCK STYLES
     height:20px;
     background-color:#0099ff;
     color:#fff;
-    padding:4px 4px;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+    padding:2px 4px;
+    display:inline-block;
     float:left;
-    margin-right:10px;
+    margin:4px 10px 0 -22px;
+    border:3px solid #fff;
+    box-shadow: -7px 0 15px rgba(0, 0, 0, 0.18);
+    transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+    -webkit-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+    -moz-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+    -o-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+    -ms-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
   }
   
   .sidebar-event-title {
@@ -266,7 +278,7 @@ KALIS-TV BLOCK STYLES
     text-transform:uppercase;
     font-family: $sans-serif-title;
     font-size: $title-base-size;
-    margin:0 0 5px 0;
+    margin:0 0 15px 0;
     padding:0;
     color: #222;
     font-weight:300;
@@ -277,11 +289,56 @@ KALIS-TV BLOCK STYLES
 
 #vimeoRecent {
   width:100%;
-  min-height:156px;
+  position:relative;
+  
+    a {
+      position:relative;
+      display:block;
+      
+      .play-video {
+        background: url("../images/play-video.png") no-repeat scroll center center transparent;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        opacity:0.7;
+      }
+      
+      &:hover .play-video {
+        opacity:0.9;
+      }
+    }
+
   
   iframe {
     width:100%;
     height:auto;
+  }
+  
+}
+
+/*********************
+THICKBOX STYLES
+*********************/
+
+body #TB_window {
+  border-radius:5px;
+  border:5px solid #fff !important;
+  background:#fff;
+  width:450px !important;
+  margin-left:-225px !important;
+  margin-top:-38% !important;
+  height:300px !important;
+  
+  #TB_title {
+   display:none;
+  }
+  
+  iframe {
+    width:100% !important;
+    height:100% !important;
   }
   
 }
@@ -307,6 +364,7 @@ WP-UNITED WIDGETS BLOCK STYLES
         h2 {
          border:0;
          font-family:inherit !important;
+         color:$link-color;
        }
      }
      
@@ -327,6 +385,18 @@ WP-UNITED WIDGETS BLOCK STYLES
        margin:0;
        padding:0;
        font-family:inherit !important;
+       
+       input[type='submit'] {
+         padding:4px 12px;
+         color:#fff;
+         background:$bones-pink;
+         border-radius:2px;
+         border:0;
+         
+         &:hover {
+           background:darken($bones-pink, 9%);
+         }
+       }
 
       
        .polls {
@@ -339,13 +409,29 @@ WP-UNITED WIDGETS BLOCK STYLES
            dt {
              float:none;
              padding:2px 0 2px 0;
+             width:100%;
+             zoom: 1;
+            
+             &:before, &:after { content: ""; display: table; }
+             &:after { clear: both; }
+             
+             label,
+             input {
+               float:left;
+               display:inline-block;
+               margin:0 10px 5px 0;
+             }
+             
+             label {
+              width:80%;
+             }
            }
         
            dd {
-             padding:0 4px 0 0;
+             padding:4px 4px 0 0;
           
              &.resultbar {
-               width:80%;
+               width:70%;
              
                .pollbar1,
                .pollbar2,
@@ -396,6 +482,17 @@ WP-UNITED WIDGETS BLOCK STYLES
 }
 
 /********************
+BREADCRUMB STYLES
+style a page via class
+********************/
+
+#content .breadcrumb-container {
+  padding:10px;
+  background:#fff;
+  margin:0 2px 20px 2px;
+}
+
+/********************
 WORDPRESS BODY CLASSES
 style a page via class
 ********************/
@@ -442,7 +539,7 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	width: 95%;
-	min-width:470px;
+	min-width:445px;
 	margin: 0 auto;
 }
 
@@ -452,10 +549,12 @@ LINK STYLES
 
 a, a:visited {
 	color: $bones-blue;
+	text-decoration:none;
 
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+		text-decoration:none;
 	}
 
 	/* on click */
@@ -481,7 +580,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif-title;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight:300;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -514,7 +613,6 @@ h3, .h3 {
 
 h4, .h4 {
 	font-size: 1.1em;
-	font-weight: 700;
 }
 
 h5, .h5 {
@@ -525,13 +623,15 @@ h5, .h5 {
 }
 
 /*********************
-HEADER STYLES
+SITE HEADER STYLES
 *********************/
 
 .header {
   
   .twoway-navigation {
     width:100%;
+    background:$bones-pink;
+    margin-bottom:20px;
   
     .twoway-navigation-kurnu,
     .twoway-navigation-forum {
@@ -581,7 +681,7 @@ HEADER STYLES
   } 
   
   #inner-header {
-
+    
   }
 } 
 
@@ -1270,5 +1370,14 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {}	
 
+/*********************
+BOX-SIZING OVERRIDES
+*********************/
+
+.sidebar-event-date {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
