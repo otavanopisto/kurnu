@@ -3,7 +3,7 @@
 
   if ( $the_query->have_posts()) {
     echo '<div class="sticky-listing-wrapper block dark">';
-    echo '<h3 class="sticky-column-title">Uusimmat ja kuumimmat</h3>';
+    echo '<h3 class="sticky-column-title">Toimituksen valinnat</h3>';
   }
 
   // The Loop
@@ -12,7 +12,7 @@
 //   $custom_value = get_post_custom_values('eventdate', get_the_ID());
 //   $originalDate = $custom_value[0];
 //   $formattedDate = date("d.m.", strtotime($originalDate));
-  echo '<div class="sidebar-listing-container">';
+  echo '<div class="sticky-listing-container">';
   echo '<ul>';
   echo '<li class="sidebar-sticky">';
   // echo '<div class="sidebar-sticky-date">' . $formattedDate . '</div>';

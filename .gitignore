@@ -18,4 +18,5 @@ sitemap.xml.gz
 *.DS_Store
 /.externalToolBuilders
 /forum/cache
+/wp-content/plugins/wp-united/cache
 *.sass-cache

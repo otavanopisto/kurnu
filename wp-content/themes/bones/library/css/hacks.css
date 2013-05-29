@@ -1,0 +1,16 @@
+.siesta-current{
+	
+}
+.siesta-hidden{
+	display: none;
+}
+.next-siesta{
+	position: absolute;
+	right: 15px;
+	top: 17px;
+}
+.prev-siesta{
+	position: absolute;
+	left: 15px;
+	top: 17px;
+}

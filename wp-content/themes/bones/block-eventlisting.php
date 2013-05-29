@@ -12,7 +12,7 @@
   ));
 
   if ( $the_query->have_posts()) {
-    echo '<div class="event-listing-wrapper block bright-1">';      
+    echo '<div class="event-listing-wrapper block white">';      
     echo '<h3 class="event-column-title">Tulevat tapahtumat</h3>';
   }
 
