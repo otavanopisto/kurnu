@@ -106,3 +106,27 @@ jQuery(document).ready(function($) {
 	w.addEventListener( "orientationchange", restoreZoom, false );
 	w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
+
+jQuery(document).ready(function(){
+  jQuery('.prev-siesta').click(function(event){
+    $current = jQuery('.siesta-current');
+    $prev = $current.prev(".siesta");
+    if($prev.length > 0){
+      $current.removeClass('siesta-current');
+      $current.addClass('siesta-hidden'); 
+      $prev.removeClass('siesta-hidden');
+      $prev.addClass('siesta-current');  
+    }
+  });
+  jQuery('.next-siesta').click(function(event){
+    $current = jQuery('.siesta-current');
+    $next = $current.next(".siesta");
+    if($next.length > 0){
+      $current.removeClass('siesta-current');
+      $current.addClass('siesta-hidden'); 
+      $next.removeClass('siesta-hidden');
+      $next.addClass('siesta-current');  
+    }
+  });
+});
+
