@@ -1,68 +1,32 @@
 <?php
-  $today = date('Y-m-d');
-  $the_query = new WP_Query( array ( 'post_type' => 'siesta', 'posts_per_page' => 1, 'orderby' => 'meta_value', 'meta_key' => 'eventdate', 'order' => 'ASC',
-      'meta_query' => array(
-//           array(
-//             'key' => 'eventdate',
-//             'value' => $today,
-//             'type' => 'date',
-//             'compare' => '>=',
-//               ),
-          array(
-    				'meta_key'	=> 'eventdate',
-            'meta_value'	=> array($today),
-    				'meta_type' => 'date',
-            'meta_compare'	=> '>=',
-    			),
-      )
-  ));
-
-
+  $args = array();
+  $args['post_type'] = 'siesta';
+  $args['orderby'] = 'ID';
+  $args['meta_key'] = 'eventdate';
+  $Q = new GetPostsQuery($args);
+  $results = $Q->get_posts();
   
-  
-  if ( $the_query->have_posts()) {
-    echo '<div id="siesta-content" class="siesta-listing-wrapper block light">';
-  }
-
   // The Loop
-  while ( $the_query->have_posts() ) :
-    $the_query->the_post();
-    $custom_value = get_post_custom_values('eventdate', get_the_ID());
-    $originalDates = (array) json_decode($custom_value[0], true );;
-    sort($originalDates);
-    $is_today = false;
-    foreach ($originalDates as $date){
-      if ( $date == $today) { $is_today = true; }
-      if( $date > $today ){
-        $dates[] = $date;
-      }  
-    }
-
-    $formattedDate = date("d.m.", strtotime($dates[0]));
-    if ( $is_today ) {
-      echo '<h3 class="siesta-column-title">Siestalla t&auml;n&auml;&auml;n</h3>';
-    }else{
-      echo '<h3 class="siesta-column-title">Siestalla ' . $formattedDate . '</h3>';    
-    }
-    echo '<div class="siesta-listing-container">';
-    echo '<ul>';
-    echo '<li class="sidebar-siesta">';
-    echo '<div class="sidebar-siesta-row">';
-    echo '<div class="sidebar-siesta-title">' . get_the_title() . '</div>';
+  $siestas = array();
+  foreach ($results as $siesta){
+    construct_siestas($siesta, $siestas);    
+  }
+  ksort($siestas);
+  $nearest = get_nearest_siesta($siestas);
+  foreach ($siestas as $siesta_date => $single_siesta){
+    $formatted_date = date('d.m.', $siesta_date);
+    $magic = ($nearest != $siesta_date) ? 'siesta-hidden' : 'siesta-current';
+    echo '<div class="'. $magic .' siesta">';
+    echo '<div id="siesta-content" class="siesta-listing-wrapper block light">';
+    echo '<h3 class="siesta-column-title">Siestalla ' . $formatted_date . '</h3>';
+    echo '<div class="sidebar-siesta-title">' . $single_siesta['post_title'] . '</div>';
+    echo '<div class="sidebar-siesta-excerpt">' . $single_siesta['post_excerpt'] . '</div>';
+    echo '<span class="prev-siesta"><a href="#"><< Prev</a></span>';
+    echo '<span class="next-siesta"><a href="#">Next >></a></span>';
     echo '</div>';
-    echo '<div class="sidebar-siesta-row">';
-    echo '<div class="sidebar-siesta-excerpt">' . get_the_excerpt() . '</div>';
-    echo '<a id="siesta-ajax-link" href="http://www.kurnu.com/?post_type=siesta&p=109">Toinen siesta</a>';
-    echo '</div>';
-    echo '</li>';
-    echo '</ul>';
-    echo '</div>';
-  endwhile;
-
-  if ( $the_query->have_posts()) {
     echo '</div>';
   }
+  
 
-  wp_reset_postdata();
 
 ?>
