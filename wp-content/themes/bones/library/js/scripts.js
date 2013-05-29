@@ -117,7 +117,7 @@ jQuery(document).ready(function(){
       $prev.removeClass('siesta-hidden');
       $prev.addClass('siesta-current');
       if($prev.prev(".siesta").length == 0){
-        jQuery('.siesta-current').find('.prev-siesta').hide();
+        jQuery('.siesta-current').find('.prev-siesta').remove();
       }
     }
   });
@@ -130,7 +130,7 @@ jQuery(document).ready(function(){
       $next.removeClass('siesta-hidden');
       $next.addClass('siesta-current');  
       if($next.next(".siesta").length == 0){
-        jQuery('.siesta-current').find('.next-siesta').hide();
+        jQuery('.siesta-current').find('.next-siesta').remove();
       }
     }
   });
