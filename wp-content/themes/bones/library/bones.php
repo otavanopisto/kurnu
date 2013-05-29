@@ -156,7 +156,8 @@ function bones_scripts_and_styles() {
     */
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
-
+    wp_register_style( 'hacks', get_stylesheet_directory_uri() . '/library/css/hacks.css', array(), '', 'all');
+    wp_enqueue_style( 'hacks' );
   }
 }
 
@@ -396,6 +397,29 @@ function bones_get_the_author_posts_link() {
 		get_the_author()
 	);
 	return $link;
+}
+
+function construct_siestas($siesta, &$siestas) {
+  $event = $siesta['eventdate'];
+  $event_dates = (array) json_decode($siesta['eventdate'], true );
+  foreach($event_dates as $date){
+    $siesta['eventdate'] = $date;
+    $event_stamp = strtotime($date);
+    if(array_key_exists($event_stamp, $siestas)){
+      $event_stamp = $event_stamp + 1;
+    }
+    $siestas[$event_stamp] = $siesta;
+  }
+}
+
+function get_nearest_siesta($siestas){
+  $today = strtotime(date('Y-m-d', time()));
+  foreach ($siestas as $date => $siesta) {
+    $event_stamp = strtotime($date);
+    if ($date >= $today) return $date;
+  }
+  $last_siesta = end($siestas);
+  return $last_siesta['eventdate'];
 }
 
 ?>
