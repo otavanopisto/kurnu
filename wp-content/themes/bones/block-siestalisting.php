@@ -19,7 +19,7 @@
     echo '<div class="'. $magic .' siesta">';
     echo '<div id="siesta-content" class="siesta-listing-wrapper block white">';
     echo '<h3 class="siesta-column-title">Siestalla ' . $formatted_date . '</h3>';
-    echo '<div class="sidebar-siesta-title">' . $single_siesta['post_title'] . '</div>';
+    echo '<div class="sidebar-siesta-title"><a href="'. $single_siesta['permalink'] .'">' . $single_siesta['post_title'] . '</a></div>';
     echo '<div class="sidebar-siesta-excerpt">' . $single_siesta['post_excerpt'] . '</div>';
     echo '<span class="prev-siesta"><a href="#"><<</a></span>';
     echo '<span class="next-siesta"><a href="#">>></a></span>';
