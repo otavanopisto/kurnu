@@ -27,7 +27,6 @@ body {
 header,
 #main article:last-child {
   margin-bottom:20px;
-  
 }
 
 /*********************
@@ -37,6 +36,11 @@ ARTICLE BLOCK STYLES
 article.block {
   padding:10px 15px;
   margin:0 2px;
+  
+  &.white {
+    box-shadow:none;
+  }
+  
   
   h1,h2 {
     margin-top:0;
@@ -340,7 +344,7 @@ KALIS-TV BLOCK STYLES
         right: 0;
         top: 0;
         z-index: 99;
-        opacity:0.7;
+        opacity:0.8;
       }
       
       &:hover .play-video {
@@ -354,6 +358,11 @@ KALIS-TV BLOCK STYLES
     height:auto;
   }
   
+}
+
+#vimeoDescription {
+  font-size:0.875em;
+  font-style:italic;
 }
 
 /*********************

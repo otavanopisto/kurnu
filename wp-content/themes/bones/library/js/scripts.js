@@ -176,7 +176,7 @@ jQuery(document).ready(function(x) {
 	        
 	      document.getElementById("vimeoRecent").appendChild(link);
 	        
-	      x(link).attr('href', 'http://player.vimeo.com/video/' + videoProperties.video_id + '?TB_iframe'); //  + '?TB_iframe=true&amp;width=720' 
+	      x(link).attr('href', 'http://player.vimeo.com/video/' + videoProperties.video_id + '?TB_iframe');
 	      x(link).attr('id', 'thumb-link');  
 	      x(link).attr('class', 'thickbox');  
 	  	  
@@ -185,7 +185,9 @@ jQuery(document).ready(function(x) {
         x(thumb).attr('src', videoProperties.thumbnail_url);
 	      x(thumb).attr('style', 'width:100%;');
 	      x(thumb).attr('class', 'kalistv-thumbnail');
-	      x(thumb).attr('alt', videoProperties.title + ' ' + videoProperties.description);
+	      x(thumb).attr('alt', videoProperties.title);
+	      
+	      document.getElementById('vimeoDescription').innerHTML =  videoProperties.title;
 
 	      document.getElementById("thumb-link").appendChild(play);
 
