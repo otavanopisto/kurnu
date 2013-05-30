@@ -182,7 +182,7 @@ jQuery(document).ready(function(x) {
 	  	  
 	      document.getElementById("thumb-link").appendChild(thumb);
 	          
-          x(thumb).attr('src', videoProperties.thumbnail_url);
+        x(thumb).attr('src', videoProperties.thumbnail_url);
 	      x(thumb).attr('style', 'width:100%;');
 	      x(thumb).attr('class', 'kalistv-thumbnail');
 	      x(thumb).attr('alt', videoProperties.title + ' ' + videoProperties.description);
