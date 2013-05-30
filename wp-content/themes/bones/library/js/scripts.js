@@ -117,8 +117,8 @@ jQuery(document).ready(function(){
         $current = jQuery('.siesta-current');
         $prev = $current.prev(".siesta");
         $prev.removeClass('siesta-hidden');
-        $height = $prev.outerHeight();
-        jQuery('#siesta-listing-wrapper').animate({height: $height + "px"},400);
+        $height = $prev.css('height');
+        jQuery('#siesta-listing-wrapper').animate({height: $height,},400);
       },
       onEnd: function(){
         $current = jQuery('.siesta-current');
