@@ -116,7 +116,8 @@ jQuery(document).ready(function(){
       onAnimation: function(){
         $current = jQuery('.siesta-current');
         $prev = $current.prev(".siesta");
-        $height = $prev.height();
+        $prev.removeClass('siesta-hidden');
+        $height = $prev.outerHeight();
         jQuery('#siesta-listing-wrapper').animate({height: $height + "px"},400);
       },
       onEnd: function(){
@@ -126,7 +127,6 @@ jQuery(document).ready(function(){
           $current.removeClass('siesta-current');
           $current.addClass('siesta-hidden');
           $prev.addClass('siesta-current');
-          $prev.removeClass('siesta-hidden');
           if($prev.prev(".siesta").length == 0){
             jQuery('.siesta-current').find('.prev-siesta').remove();
           }
@@ -142,8 +142,9 @@ jQuery(document).ready(function(){
       onAnimation: function(){
         $current = jQuery('.siesta-current');
         $next = $current.next(".siesta");
-        $height = $next.height();
-        jQuery('#siesta-listing-wrapper').animate({height: $height + "px"},400);
+        $next.removeClass('siesta-hidden');
+        $height = $next.css('height');
+        jQuery('#siesta-listing-wrapper').animate({height: $height,},400);
       },
       onEnd: function(){
         $current = jQuery('.siesta-current');
@@ -152,7 +153,6 @@ jQuery(document).ready(function(){
           $current.removeClass('siesta-current');
           $current.addClass('siesta-hidden'); 
           $next.addClass('siesta-current');
-          $next.removeClass('siesta-hidden');
           if($next.next(".siesta").length == 0){
             jQuery('.siesta-current').find('.next-siesta').remove();
           }
