@@ -128,8 +128,9 @@ function bones_scripts_and_styles() {
     // modernizr (without media query polyfill)
     wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
-//     jQuery flip plugin
-    wp_register_script( 'jquery-ui-flip', get_stylesheet_directory_uri() . '/library/js/libs/jquery.flip.min.js', array(), '0.9.9', true );
+    // modernizr (without media query polyfill)
+    wp_register_script( 'jquery-ui-flip', get_stylesheet_directory_uri() . '/library/js/libs/jquery.flip.js', array(), '0.9.9', true );
+
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
