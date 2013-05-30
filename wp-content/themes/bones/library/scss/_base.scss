@@ -22,9 +22,6 @@ body {
 	color: #565656;
 	margin:0 5px;
 	background-color:#172a0a;
-	background-image:url('../images/main-bg.jpg');
-	background-repeat:no-repeat;
-	background-position:0px -600px;
 }
 
 header,
@@ -40,7 +37,6 @@ ARTICLE BLOCK STYLES
 article.block {
   padding:10px 15px;
   margin:0 2px;
-  border-left:1px solid #f01d4f;
   
   h1,h2 {
     margin-top:0;
@@ -83,7 +79,7 @@ CUSTOM BLOCK STYLES
      color:#fff;
      
      &:hover {
-       color:#fff;
+       color:#000;
      }
     }
   }
@@ -117,7 +113,15 @@ CUSTOM BLOCK STYLES
 SIESTA BLOCK STYLES
 *********************/
 
-.siesta-listing-wrapper {
+.siesta-current {
+  
+}
+
+.siesta-hidden {
+  display: none;
+}
+
+.siesta-content-wrapper {
   border-left:1px solid #FF9900;
     
     ul {
@@ -131,15 +135,42 @@ SIESTA BLOCK STYLES
       
       a {
         text-decoration:none;
-      }
-      
-
+      }    
+    }
     
     .sidebar-siesta-excerpt {
       font-size:0.925em;
     }
     
-  }
+    .prev-siesta,
+    .next-siesta {
+      display:inline-block;
+      width:32px;
+      height:32px;
+      position: absolute;
+      top: 10px;
+      opacity:0.5;
+      
+        a {
+          display:inline-block;
+          width:32px;
+          height:32px;
+        }
+        
+        &:hover {
+          opacity:0.9;
+        }
+      }
+      
+      .prev-siesta {
+        background:url('../images/prev.png') no-repeat center center;
+        right: 45px;
+      }
+      
+      .next-siesta {
+        background:url('../images/next.png') no-repeat center center;
+        right: 12px;
+      }
 
 }
 
@@ -148,7 +179,6 @@ EVENTS BLOCK STYLES
 *********************/
 
 .event-listing-wrapper {
-  border-left:1px solid #34aeff;
 
   h3 {
 
@@ -257,7 +287,7 @@ STICKY BLOCK STYLES
 }
 
 .sticky-listing-container {
-  margin:10px 0 0 0;
+  margin:10px 0 5px 0;
   
   ul {
     margin:0;
