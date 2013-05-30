@@ -109,60 +109,74 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function(){
   jQuery('.prev-siesta').click(function(event){
-    $current = jQuery('.siesta-current');
-    $prev = $current.prev(".siesta");
-    if($prev.length > 0){
-      $current.removeClass('siesta-current');
-      $current.addClass('siesta-hidden'); 
-      $prev.removeClass('siesta-hidden');
-      $prev.addClass('siesta-current');
-      if($prev.prev(".siesta").length == 0){
-        jQuery('.siesta-current').find('.prev-siesta').remove();
-      }
-    }
+    jQuery('#siesta-wrapper-block').flip({
+      direction:'lr',
+      color: 'white',
+      speed: 350,
+      onEnd: function(){
+        $current = jQuery('.siesta-current');
+        $prev = $current.prev(".siesta");
+        if($prev.length > 0){
+          $current.removeClass('siesta-current');
+          $current.addClass('siesta-hidden');
+          $prev.removeClass('siesta-hidden');
+          $prev.addClass('siesta-current');
+          if($prev.prev(".siesta").length == 0){
+            jQuery('.siesta-current').find('.prev-siesta').remove();
+          }
+        }  
+      },
+    });
   });
   jQuery('.next-siesta').click(function(event){
-    $current = jQuery('.siesta-current');
-    $next = $current.next(".siesta");
-    if($next.length > 0){
-      $current.removeClass('siesta-current');
-      $current.addClass('siesta-hidden'); 
-      $next.removeClass('siesta-hidden');
-      $next.addClass('siesta-current');  
-      if($next.next(".siesta").length == 0){
-        jQuery('.siesta-current').find('.next-siesta').remove();
-      }
-    }
+    jQuery('#siesta-wrapper-block').flip({
+      direction:'rl',
+      color: 'white',
+      speed: 350,
+      onEnd: function(){
+        $current = jQuery('.siesta-current');
+        $next = $current.next(".siesta");
+        if($next.length > 0){
+          $current.removeClass('siesta-current');
+          $current.addClass('siesta-hidden'); 
+          $next.removeClass('siesta-hidden');
+          $next.addClass('siesta-current');
+          if($next.next(".siesta").length == 0){
+            jQuery('.siesta-current').find('.next-siesta').remove();
+          }
+        }
+      },
+    });
   });
 });
 
-jQuery(document).ready(function($) {
-    
-    $.getJSON('http://vimeo.com/api/v2/user8868748/videos.json?callback=?', {format: "json"}, function(videoList) {
-      $.getJSON('http://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/' + videoList[0].id + '&byline=false&portrait=false&callback=?', {format: "json"}, function(videoProperties) {
-
-    	var link = document.createElement('a');
-        var thumb = document.createElement('img');
-        var play = document.createElement('span');
-        
-        document.getElementById("vimeoRecent").appendChild(link);
-        
-    	  $(link).attr('href', 'http://player.vimeo.com/video/' + videoProperties.video_id + '?TB_iframe'); //  + '?TB_iframe=true&amp;width=720' 
-    	  $(link).attr('id', 'thumb-link');  
-    	  $(link).attr('class', 'thickbox');  
-                  
-    	  document.getElementById("thumb-link").appendChild(thumb);
-          
-    	  $(thumb).attr('src', videoProperties.thumbnail_url);
-    	  $(thumb).attr('style', 'width:100%;');
-    	  $(thumb).attr('class', 'kalistv-thumbnail');
-    	  $(thumb).attr('alt', videoProperties.title + ' ' + videoProperties.description);
-
-    	  document.getElementById("thumb-link").appendChild(play);
-
-        $(play).attr('class', 'play-video');
-        
-      });
-    });
-  });
+//jQuery(document).ready(function($) {
+//    
+//    $.getJSON('http://vimeo.com/api/v2/user8868748/videos.json?callback=?', {format: "json"}, function(videoList) {
+//      $.getJSON('http://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/' + videoList[0].id + '&byline=false&portrait=false&callback=?', {format: "json"}, function(videoProperties) {
+//
+//    	var link = document.createElement('a');
+//        var thumb = document.createElement('img');
+//        var play = document.createElement('span');
+//        
+//        document.getElementById("vimeoRecent").appendChild(link);
+//        
+//    	  $(link).attr('href', 'http://player.vimeo.com/video/' + videoProperties.video_id + '?TB_iframe'); //  + '?TB_iframe=true&amp;width=720' 
+//    	  $(link).attr('id', 'thumb-link');  
+//    	  $(link).attr('class', 'thickbox');  
+//                  
+//    	  document.getElementById("thumb-link").appendChild(thumb);
+//          
+//    	  $(thumb).attr('src', videoProperties.thumbnail_url);
+//    	  $(thumb).attr('style', 'width:100%;');
+//    	  $(thumb).attr('class', 'kalistv-thumbnail');
+//    	  $(thumb).attr('alt', videoProperties.title + ' ' + videoProperties.description);
+//
+//    	  document.getElementById("thumb-link").appendChild(play);
+//
+//        $(play).attr('class', 'play-video');
+//        
+//      });
+//    });
+//  });
 

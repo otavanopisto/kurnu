@@ -13,6 +13,7 @@
   }
   ksort($siestas);
   $nearest = get_nearest_siesta($siestas);
+  if(!empty($siestas)) echo '<div id="siesta-wrapper-block">';
   foreach ($siestas as $siesta_date => $single_siesta){
     $formatted_date = date('d.m.', $siesta_date);
     $magic = ($nearest != $siesta_date) ? 'siesta-hidden' : 'siesta-current';
@@ -26,5 +27,5 @@
     echo '</div>';
     echo '</div>';
   }
-  
+  if(!empty($siestas)) echo '</div>';  
 ?>
