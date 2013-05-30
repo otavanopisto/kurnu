@@ -113,64 +113,68 @@ CUSTOM BLOCK STYLES
 SIESTA BLOCK STYLES
 *********************/
 
-.siesta-current {
-  
-}
-
-.siesta-hidden {
-  display: none;
-}
-
-.siesta-content-wrapper {
+#siesta-listing-wrapper {
   border-left:1px solid #FF9900;
-    
-    ul {
-      margin:0;
-    }
-    
-    .sidebar-siesta-title {
-      font-size: 1.2em;
-      font-weight: normal;
-      padding: 1px 0 3px 0;
+  
+  .siesta-current {
+  
+  }
+  
+  .siesta-hidden {
+    display: none;
+  }
+  
+  .siesta-content-wrapper {
+  
+      ul {
+        margin:0;
+      }
       
-      a {
-        text-decoration:none;
-      }    
-    }
-    
-    .sidebar-siesta-excerpt {
-      font-size:0.925em;
-    }
-    
-    .prev-siesta,
-    .next-siesta {
-      display:inline-block;
-      width:32px;
-      height:32px;
-      position: absolute;
-      top: 10px;
-      opacity:0.5;
-      
+      .sidebar-siesta-title {
+        font-size: 1.2em;
+        font-weight: normal;
+        padding: 1px 0 3px 0;
+        
         a {
-          display:inline-block;
-          width:32px;
-          height:32px;
+          text-decoration:none;
+        }    
+      }
+      
+      .sidebar-siesta-excerpt {
+        font-size:0.925em;
+      }
+      
+      .prev-siesta,
+      .next-siesta {
+        display:inline-block;
+        width:32px;
+        height:32px;
+        position: absolute;
+        top: 10px;
+        opacity:0.5;
+        
+          a {
+            display:inline-block;
+            width:32px;
+            height:32px;
+          }
+          
+          &:hover {
+            opacity:0.9;
+          }
         }
         
-        &:hover {
-          opacity:0.9;
+        .prev-siesta {
+          background:url('../images/prev.png') no-repeat center center;
+          right: 45px;
         }
-      }
-      
-      .prev-siesta {
-        background:url('../images/prev.png') no-repeat center center;
-        right: 45px;
-      }
-      
-      .next-siesta {
-        background:url('../images/next.png') no-repeat center center;
-        right: 12px;
-      }
+        
+        .next-siesta {
+          background:url('../images/next.png') no-repeat center center;
+          right: 12px;
+        }
+  
+  }
 
 }
 
@@ -1407,7 +1411,8 @@ FOOTER STYLES
 BOX-SIZING OVERRIDES
 *********************/
 
-.sidebar-event-date {
+.sidebar-event-date,
+#siesta-listing-wrapper {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;

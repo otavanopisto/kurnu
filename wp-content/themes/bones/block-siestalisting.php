@@ -13,12 +13,12 @@
   }
   ksort($siestas);
   $nearest = get_nearest_siesta($siestas);
-  if(!empty($siestas)) echo '<div id="siesta-wrapper-block">';
+  if(!empty($siestas)) echo '<div id="siesta-listing-wrapper" class="block white">';
   foreach ($siestas as $siesta_date => $single_siesta){
     $formatted_date = date('d.m.', $siesta_date);
     $magic = ($nearest != $siesta_date) ? 'siesta-hidden' : 'siesta-current';
     echo '<div class="'. $magic .' siesta">';
-    echo '<div class="siesta-content-wrapper block white">';
+    echo '<div class="siesta-content-wrapper">';
     echo '<h3 class="siesta-column-title">Siestalla ' . $formatted_date . '</h3>';
     echo '<div class="sidebar-siesta-title"><a href="'. $single_siesta['permalink'] .'">' . $single_siesta['post_title'] . '</a></div>';
     echo '<div class="sidebar-siesta-excerpt">' . $single_siesta['post_excerpt'] . '</div>';

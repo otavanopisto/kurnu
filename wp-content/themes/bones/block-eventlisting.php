@@ -2,12 +2,12 @@
   $today = date('Y-m-d');
   $the_query = new WP_Query( array ( 'post_type' => 'event', 'posts_per_page' => 5, 'orderby' => 'meta_value', 'meta_key' => 'eventdate', 'order' => 'ASC', 
     'meta_query' => array(
-        array(
-            'key' => 'eventdate',
-            'value' => $today,
-            'type' => 'date',
-            'compare' => '>='
-        )
+      array(
+        'key' => 'eventdate',
+        'value' => $today,
+        'type' => 'date',
+        'compare' => '>='
+      )
     )
   ));
 
