@@ -112,7 +112,7 @@ jQuery(document).ready(function(){
     jQuery('#siesta-listing-wrapper').flip({
       direction:'lr',
       color: 'white',
-      speed: 200,
+      speed: 100,
       onEnd: function(){
         $current = jQuery('.siesta-current');
         $prev = $current.prev(".siesta");
@@ -132,7 +132,7 @@ jQuery(document).ready(function(){
 	jQuery('#siesta-listing-wrapper').flip({
       direction:'rl',
       color: 'white',
-      speed: 200,
+      speed: 100,
       onEnd: function(){
         $current = jQuery('.siesta-current');
         $next = $current.next(".siesta");
