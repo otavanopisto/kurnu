@@ -36,6 +36,7 @@ ARTICLE BLOCK STYLES
 article.block {
   padding:10px 15px;
   margin:0 2px;
+  border-left:1px solid #f01d4f;
   
   &.white {
     box-shadow:none;
@@ -251,10 +252,31 @@ ANNOUNCEMENT BLOCK STYLES
 *********************/
 
 .announcement-wrapper {
-  border-left:1px solid #0099ff;
+  
+  .announcement-container {
+    border:1px solid #eee;
+    padding-bottom:0;
+    padding:30px 25px 0 25px;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    background-position:center center;
+  }
+  
+  .announcement-row-wrapper {
+    box-shadow:0 -8px 12px rgba(0, 0, 0, 0.8);
+    opacity:0.95;
+  }
   
   .announcement-row {
-    margin-bottom:5px;
+    margin:15px 0 0 0;
+    background:#fff;
+    padding:5px 15px 0 15px;
+    
+    &:last-child {
+      margin:0;
+      padding:10px 15px;
+  }
+    
   }
   
   .announcement-date {
@@ -403,7 +425,6 @@ WP-UNITED WIDGETS BLOCK STYLES
          border:0;
          font-family:inherit !important;
          color:$link-color;
-         font-weight:300;
        }
      }
      

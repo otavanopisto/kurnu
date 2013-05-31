@@ -6,7 +6,7 @@
         
           <?php the_breadcrumb(); ?>
 
-					<div id="main" class="eightcol first clearfix" role="main">
+					<div id="main" class="sevencol first clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -59,6 +59,8 @@
 						<?php endif; ?>
 
 					</div> <!-- end #main -->
+
+          <?php get_sidebar('article'); ?>
 
 					<?php get_sidebar('right'); ?>
 
