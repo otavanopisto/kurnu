@@ -83,7 +83,7 @@ CUSTOM BLOCK STYLES
      color:#fff;
      
      &:hover {
-       color:#000;
+       color:#6bff64;
      }
     }
   }
@@ -258,17 +258,7 @@ ANNOUNCEMENT BLOCK STYLES
   }
   
   .announcement-date {
-    width:40px;
-    height:20px;
-    background-color:#fff;
-    color:#0099ff;
-    border-radius:2px;
-    padding:2px 4px;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    float:left;
-    margin-right:10px;
+
   }
   
   .announcement-title {
@@ -313,6 +303,7 @@ KALIS-TV BLOCK STYLES
   padding:10px 15px 10px 15px;
   margin:0 2px 20px 2px;
   font-family:$sans-serif !important;
+  box-shadow:0px 0px 15px rgba(0,0,0,0.5);
   font-size:1.1em;
   
   h4.widgettitle {
@@ -399,7 +390,7 @@ WP-UNITED WIDGETS BLOCK STYLES
   margin:0 2px 20px 2px;
   font-family:$sans-serif !important;
   font-size:1.1em;
-  box-shadow:0px 0px 15px rgba(0,0,0,0.3);
+  box-shadow:0px 0px 15px rgba(0,0,0,0.5);
   
   .wpuisle2 {
    padding:0;
