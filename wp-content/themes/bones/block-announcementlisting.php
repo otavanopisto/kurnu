@@ -10,7 +10,7 @@
   if(!empty($results)) echo '<div id="announcement-listing-wrapper">';
   foreach ($results as $announcement){
     $background = ($announcement['thumbnail_src']) ? 'style="background-image: url('. $announcement['thumbnail_src'] .')"' : '';
-    echo '<div class="announcement-wrapper block bright-2" '. $background .'>';
+    echo '<div class="announcement-wrapper block white" '. $background .'>';
     echo '<div class="announcement-row">';
     echo '<div class="announcement-title"><a href="' . $announcement['permalink'] . '">' . $announcement['post_title'] . '</a></div>';
     echo '</div>';
