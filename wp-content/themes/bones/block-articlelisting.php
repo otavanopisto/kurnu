@@ -12,7 +12,7 @@
       <div class="entry-content clearfix">
         <?php if ( has_post_thumbnail() ) { the_post_thumbnail('large'); } ?>
       
-        <?php the_content(); ?>
+        <?php the_excerpt(); ?>
       </div>
     
     </div>

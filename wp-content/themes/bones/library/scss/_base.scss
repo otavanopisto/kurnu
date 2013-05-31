@@ -140,6 +140,7 @@ SIESTA BLOCK STYLES
         font-size: 1.3em;
         font-weight: 300;
         padding: 1px 0 3px 0;
+        margin:3px 0 0 0;
         
         a {
           text-decoration:none;
@@ -254,7 +255,7 @@ ANNOUNCEMENT BLOCK STYLES
 .announcement-wrapper {
   
   .announcement-container {
-    border:1px solid #eee;
+    border:1px solid #fff;
     padding-bottom:0;
     padding:30px 25px 0 25px;
     background-size:100% auto;
@@ -344,6 +345,7 @@ KALIS-TV BLOCK STYLES
 #vimeoRecent {
   width:100%;
   position:relative;
+  margin:10px 0 0 0;
   
     a {
       position:relative;
