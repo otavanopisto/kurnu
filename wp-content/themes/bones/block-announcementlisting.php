@@ -1,5 +1,4 @@
 <?php
-//   $today = date('Y-m-d');
   $args = array();
   $args['limit'] = 3;
   $args['post_type'] = 'announcement';
@@ -12,7 +11,6 @@
   foreach ($results as $announcement){
     echo '<div class="announcement-wrapper block bright-2">';
     echo '<div class="announcement-row">';
-//     echo '<div class="announcement-date">' . $formattedDate . '</div>';
     echo '<div class="announcement-title"><a href="' . $announcement['permalink'] . '">' . $announcement['post_title'] . '</a></div>';
     echo '</div>';
     echo '<div class="announcement-row">';
