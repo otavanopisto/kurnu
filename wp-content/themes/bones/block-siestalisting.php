@@ -22,8 +22,8 @@
     echo '<h3 class="siesta-column-title">Siestalla ' . $formatted_date . '</h3>';
     echo '<div class="sidebar-siesta-title"><a href="'. $single_siesta['permalink'] .'">' . $single_siesta['post_title'] . '</a></div>';
     echo '<div class="sidebar-siesta-excerpt">' . $single_siesta['post_excerpt'] . '</div>';
-    echo '<span class="prev-siesta" title="Edellinen siesta"><a href="#"></a></span>';
-    echo '<span class="next-siesta" title="Seuraava siesta"><a href="#"></a></span>';
+    echo '<span class="prev-siesta" title="Edellinen siesta"></span>';
+    echo '<span class="next-siesta" title="Seuraava siesta"></span>';
     echo '</div>';
     echo '</div>';
   }
