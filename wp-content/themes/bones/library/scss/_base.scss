@@ -136,8 +136,8 @@ SIESTA BLOCK STYLES
       }
       
       .sidebar-siesta-title {
-        font-size: 1.2em;
-        font-weight: normal;
+        font-size: 1.3em;
+        font-weight: 300;
         padding: 1px 0 3px 0;
         
         a {
@@ -232,8 +232,8 @@ EVENTS BLOCK STYLES
   }
   
   .sidebar-event-title {
-    font-size:1.2em;
-    font-weight:normal;
+    font-size:1.3em;
+    font-weight:300;
     padding:2px 0;
     
     a {
@@ -251,7 +251,7 @@ ANNOUNCEMENT BLOCK STYLES
 *********************/
 
 .announcement-wrapper {
-  border-left:1px solid #f01d4f;
+  border-left:1px solid #0099ff;
   
   .announcement-row {
     margin-bottom:5px;
@@ -262,8 +262,8 @@ ANNOUNCEMENT BLOCK STYLES
   }
   
   .announcement-title {
-    font-size:1.1em;
-    font-weight:bold;
+    font-size:1.7em;
+    font-weight:300;
     padding:1px 0;
     
     a {
@@ -403,6 +403,7 @@ WP-UNITED WIDGETS BLOCK STYLES
          border:0;
          font-family:inherit !important;
          color:$link-color;
+         font-weight:300;
        }
      }
      
