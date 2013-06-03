@@ -36,10 +36,36 @@ ARTICLE BLOCK STYLES
 article.block {
   padding:10px 15px;
   margin:0 2px;
-  border-left:1px solid #f01d4f;
   
   &.white {
     box-shadow:none;
+  }
+  
+  header.article-header {
+    position:relative;
+    
+    p.comment-count {
+      position:absolute;
+      top:5px;
+      right:0;
+      margin:0;
+      
+      a {
+        display:inline-block;
+        padding:5px 10px;
+        background:#70c823;
+        color:#fff;
+        border-radius:5px;
+        margin:0;
+        min-width:2.5em;
+        text-align:center;
+        
+        &:hover {
+          background:lighten(#70c823, 9%);
+        }
+      }
+    }
+    
   }
   
   
@@ -55,6 +81,29 @@ article.block {
     
   }
   
+  p.read-more {
+    
+    a {
+      display:inline-block;
+      padding: 5px 10px;
+      background:#ff9900;
+      border-radius:3px;
+      color:#fff;
+      
+      &:hover {
+        background: darken(#ff9900, 3%);
+      }
+      
+    }
+    
+
+  
+  }
+  
+}
+
+#main {
+  background-color:#fff;
 }
 
 /*********************
@@ -255,7 +304,7 @@ ANNOUNCEMENT BLOCK STYLES
 .announcement-wrapper {
   
   .announcement-container {
-    border:1px solid #fff;
+    border:1px solid #ffffff;
     padding-bottom:0;
     padding:30px 25px 0 25px;
     background-size:100% auto;
@@ -539,6 +588,39 @@ WP-UNITED WIDGETS BLOCK STYLES
     color: #222;
     font-weight:300;
     border:0;
+  }
+  
+}
+
+/*********************
+ARTICLE BLOCK STYLES
+*********************/
+
+.article-listing-wrapper {
+  
+  .article-wrapper {
+    margin:0 0 20px 0;
+    
+    &:last-child {
+      margin:0;
+    }
+  }
+  
+  .article-title {
+  
+    h1.h2 {
+      margin-top:0;
+      font-size:1.5em;
+    }
+  
+  }
+  
+  .entry-content {
+  
+    img {
+      margin:0 0 5px 0;
+    }
+  
   }
   
 }

@@ -18,13 +18,6 @@
 								<p class="byline vcard"><?php
 										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
 									?></p>
-                  
-                <p class="comment-count" title="Kommenttien m&auml;&auml;r&auml; artikkelissa">
-                  <?php
-                    $comments_count = wp_count_comments(get_the_ID());
-                    echo '<a href="' . get_comments_link() . '">' . $comments_count->total_comments . '</a>';
-                  ?>
-                </p>
 
 							</header> <!-- end article header -->
 
@@ -67,7 +60,7 @@
 
 					</div> <!-- end #main -->
 
-          <?php get_sidebar('article'); ?>
+          <!-- <?php get_sidebar('article'); ?> -->
 
 					<?php get_sidebar('right'); ?>
 
