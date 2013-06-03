@@ -27,5 +27,17 @@
     echo '</div>';
     echo '</div>';
   }
+  $today = strtotime(date('Y-m-d', time()));
+  if($nearest < $today){
+    $formatted_date = date('d.m.', $today);
+    echo '<div class="siesta-current siesta">';
+    echo '<div class="siesta-content-wrapper">';
+    echo '<h3 class="siesta-column-title">Siestalla ' . $formatted_date . '</h3>';
+    echo '<div class="sidebar-siesta-title">Ajankohtaista siestaa ei löytynyt</div>';
+    echo '<div class="sidebar-siesta-excerpt">Voit selata vanhempia siestoja!</div>';
+    echo '<span class="prev-siesta" title="Edellinen siesta"></span>';
+    echo '</div>';
+    echo '</div>';
+  }
   if(!empty($siestas)) echo '</div>';  
 ?>
