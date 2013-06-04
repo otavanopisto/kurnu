@@ -75,6 +75,11 @@ NAVIGATION STYLES
   
   			}
   		}
+  		
+  		&.current_page_item a {
+  		  background-color: $bones-nav;
+        color:$bones-nav-hover;
+  		}
   
   		&:first-child {}
   		&:last-child {}
