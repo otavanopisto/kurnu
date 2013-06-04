@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 	<div id="content">
 
 		<div id="inner-content" class="wrap clearfix">
@@ -9,7 +8,12 @@
 			<div id="main" class="sevencol first clearfix" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
+        <?php 
+          $dates = (array) json_decode(get_post_meta(get_the_ID(), 'eventdate', true), true ); 
+          foreach($dates as $date){
+            $date_string .= '<div class="event-date">'. date('d.m.', strtotime($date)) .'</div>';
+          }
+        ?>
 				<article class="block white" id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 					<header class="article-header">
@@ -34,7 +38,7 @@
                     the_post_thumbnail('large');
                   } 
                 ?>
-          
+            <div><?php echo $date_string; ?></div>
 						<?php the_content(); ?>
 					</section> <!-- end article section -->
 
