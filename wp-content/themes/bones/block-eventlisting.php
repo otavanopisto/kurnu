@@ -2,6 +2,7 @@
   $args = array();
   $args['post_type'] = 'event';
   $args['orderby'] = 'ID';
+  $args['limit'] = 50;
   $args['meta_key'] = 'eventdate';
   $Q = new GetPostsQuery($args);
   $results = $Q->get_posts();
