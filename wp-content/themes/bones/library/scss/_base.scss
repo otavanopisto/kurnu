@@ -94,9 +94,10 @@ article.block {
       background:#ff9900;
       border-radius:3px;
       color:#fff;
+      opacity:0.85;
       
       &:hover {
-        background: darken(#ff9900, 3%);
+        opacity:1;
       }
       
     }
@@ -222,7 +223,7 @@ SIESTA BLOCK STYLES
           }
           
           &:hover {
-            opacity:0.9;
+            opacity:0.75;
           }
         }
         
@@ -615,8 +616,10 @@ ARTICLE BLOCK STYLES
   .article-title {
   
     h1.h2 {
-      margin-top:0;
+      margin:0 0 10px 0;
       font-size:1.5em;
+      text-transform:uppercase;
+      
     }
   
   }

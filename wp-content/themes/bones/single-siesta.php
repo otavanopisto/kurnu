@@ -67,7 +67,7 @@
 
 			</div> <!-- end #main -->
 
-      <?php get_sidebar('article'); ?>
+      <?php get_sidebar('siesta'); ?>
 
 			<?php get_sidebar('right'); ?>
 
