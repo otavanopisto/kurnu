@@ -227,10 +227,10 @@ function the_breadcrumb() {
       the_category('title_li=');
       if (is_single()) {
         echo " » ";
-        the_title();
+        the_title('<span class="current-crumb">', '</span>', true);
       }
     } elseif (is_page()) {
-      echo the_title();
+      the_title('<span class="current-crumb">', '</span>', true);
     }
     echo '</div>';
   }

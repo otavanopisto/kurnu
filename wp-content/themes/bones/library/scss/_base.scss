@@ -45,6 +45,14 @@ article.block {
     position:relative;
     margin-bottom:0;
     
+    .event-dates {
+      
+      .event-date {
+        display:inline-block;
+      }
+      
+    }
+    
     p.comment-count {
       position:absolute;
       top:5px;
@@ -104,10 +112,17 @@ article.block {
 
   }
   
+  footer {
+    
+    p {
+      margin:0.5em 0 1.5em 0;
+    }
+  }
+  
 }
 
 #main {
-  background-color:#fff;
+/*   background-color:#fff; */
 }
 
 .home #main {
@@ -645,7 +660,16 @@ style a page via class
   padding:10px;
   background:#fff;
   margin:0 2px 20px 2px;
+  
+  a, 
+  .current-crumb {
+    display:inline-block;
+    padding: 0 8px;
+  }
+  
 }
+
+
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1383,11 +1407,15 @@ COMMENT FORM STYLES
 ******************************************************************/
 
 .respond-form {
-	margin: 1.5em 10px;
+	margin: 1.5em 0;
 	padding-bottom: 2.2em;
 
 	form {
 		margin: 0.75em 0;
+		
+		div.alert-info {
+		  display:none;
+		}
 
 		li {
 			list-style-type: none;
