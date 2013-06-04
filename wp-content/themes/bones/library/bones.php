@@ -433,6 +433,7 @@ function get_nearest_siesta($siestas){
 }
 
 function construct_events($event, &$events) {
+  $today = strtotime(date('Y-m-d', time()));
   $event_dates = (array) json_decode($event['eventdate'], true );
   foreach($event_dates as $date){
     $event['eventdate'] = $date;
@@ -440,9 +441,7 @@ function construct_events($event, &$events) {
     if(array_key_exists($event_stamp, $events)){
       $event_stamp = $event_stamp + 1;
     }
-    $today = strtotime(date('Y-m-d', time()));
     if($today <= $event_stamp) $events[$event_stamp] = $event;
-
   }
 }
 
