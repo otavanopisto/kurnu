@@ -410,7 +410,7 @@ function bones_get_the_author_posts_link() {
 }
 
 function construct_siestas($siesta, &$siestas) {
-  $event = $siesta['eventdate'];
+//   $event = $siesta['eventdate'];
   $event_dates = (array) json_decode($siesta['eventdate'], true );
   foreach($event_dates as $date){
     $siesta['eventdate'] = $date;
@@ -430,6 +430,20 @@ function get_nearest_siesta($siestas){
   }
   $last_siesta = end($siestas);
   return $last_siesta['eventdate'];
+}
+
+function construct_events($event, &$events) {
+  $event_dates = (array) json_decode($event['eventdate'], true );
+  foreach($event_dates as $date){
+    $event['eventdate'] = $date;
+    $event_stamp = strtotime($date);
+    if(array_key_exists($event_stamp, $events)){
+      $event_stamp = $event_stamp + 1;
+    }
+    $today = strtotime(date('Y-m-d', time()));
+    if($today <= $event_stamp) $events[$event_stamp] = $event;
+
+  }
 }
 
 ?>
