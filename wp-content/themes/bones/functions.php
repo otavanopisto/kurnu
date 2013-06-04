@@ -207,4 +207,13 @@ function the_breadcrumb() {
   
 }
 
+function add_siesta_category_automatically($post_ID) {
+  global $wpdb;
+  if(!wp_is_post_revision($post_ID)) {
+    $siestacat = array (17);
+    wp_set_object_terms( $post_ID, $siestacat, 'category');
+  }
+}
+add_action('publish_siesta', 'add_siesta_category_automatically');
+
 ?>
