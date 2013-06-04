@@ -38,7 +38,6 @@
                     the_post_thumbnail('large');
                   } 
                 ?>
-            <div><?php echo $date_string; ?></div>
 						<?php the_content(); ?>
 					</section> <!-- end article section -->
 
