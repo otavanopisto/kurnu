@@ -101,15 +101,17 @@ article.block {
       }
       
     }
-    
 
-  
   }
   
 }
 
 #main {
   background-color:#fff;
+}
+
+.home #main {
+  background:none;
 }
 
 /*********************
