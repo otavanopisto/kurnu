@@ -25,9 +25,9 @@
               }
             ?>
             
-            <p class="event-dates">
+            <div class="event-dates">
               <?php echo $date_string; ?>
-            </p>
+            </div>
               
             <p class="comment-count" title="Kommentit">
               <?php

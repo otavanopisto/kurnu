@@ -48,7 +48,18 @@ article.block {
     .event-dates {
       
       .event-date {
+        background-color:#0099ff;
+        color:#fff;
+        padding:2px 4px;
         display:inline-block;
+        margin:4px 10px 0 0;
+        border:3px solid #fff;
+        box-shadow: -7px 0 15px rgba(0, 0, 0, 0.18);
+        transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+        -webkit-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+        -moz-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+        -o-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+        -ms-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
       }
       
     }
@@ -324,6 +335,15 @@ EVENTS BLOCK STYLES
 /*********************
 ANNOUNCEMENT BLOCK STYLES
 *********************/
+
+#sidebar-announcement .announcement-container {
+    border:1px solid #ffffff;
+    padding-bottom:0;
+    padding:30px 25px 0 25px;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+  }
 
 .announcement-wrapper {
   
@@ -720,6 +740,12 @@ LAYOUT & GRID STYLES
 	width: 95%;
 	min-width:445px;
 	margin: 0 auto;
+}
+
+#container #wpucssmagic {
+  min-width:445px;
+  width:95%;
+  margin:0 auto !important;
 }
 
 /*********************
