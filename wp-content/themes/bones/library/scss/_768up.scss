@@ -38,12 +38,68 @@ LAYOUT & GRID STYLES
 }
 
 /*********************
-HEADER STYLES
+SITE HEADER STYLES
 *********************/
 
-.header {}
+.header {
+  
+  .twoway-navigation {
+    width:100%;
+    background:#fff;
+  
+    .twoway-navigation-kurnu,
+    .twoway-navigation-forum {
+      padding:20px 0px;
+      font-size:2em;
+      display:inline-block;
+      float:left;
+      width:50%;
+      
+      a {
+        text-decoration:none;
+        color:#fff;
+        display:inline-block;
+        margin:0 20px;
 
-	#logo {}
+        
+        span {
+          padding:10px 15px 0px 15px;
+          background:#000; 
+          display:inline-block;
+          width:auto;
+        }
+        
+      }
+      
+      span.kurnu-description,
+      span.forum-description {
+        display:block;
+        font-size:0.6em;
+        font-style:italic;
+        color:#fff;
+        background:#000;
+        padding:10px 15px;
+        width:auto;
+      }
+      
+    }
+    
+    .twoway-navigation-kurnu {
+      text-align:left
+    }
+    
+    .twoway-navigation-forum {
+      text-align:right;
+    }
+  
+  } 
+  
+  #inner-header {
+    
+  }
+} 
+
+  #logo {}
 
 /*********************
 NAVIGATION STYLES
@@ -52,6 +108,7 @@ NAVIGATION STYLES
 .nav {
 	background: #fff;
 	border: 0;
+	margin:0;
 	
 	ul {
 	  padding:0;
@@ -67,6 +124,9 @@ NAVIGATION STYLES
         padding:15px 18px;
         display:block;
         text-transform:uppercase;
+        background:none;
+        border-radius:0px;
+        margin:0 1px 0 0;
   
   			/*
   			you can use hover styles here even though this size

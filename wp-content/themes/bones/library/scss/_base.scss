@@ -133,10 +133,6 @@ article.block {
   
 }
 
-#main {
-/*   background-color:#fff; */
-}
-
 .home #main {
   background:none;
 }
@@ -739,7 +735,7 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	width: 95%;
-	min-width:445px;
+	min-width:365px;
 	margin: 0 auto;
 }
 
@@ -841,7 +837,7 @@ SITE HEADER STYLES
     .twoway-navigation-kurnu,
     .twoway-navigation-forum {
       padding:20px 0px;
-      font-size:2em;
+      font-size:1.6em;
       display:inline-block;
       float:left;
       width:50%;
@@ -854,7 +850,7 @@ SITE HEADER STYLES
 
         
         span {
-          padding:10px 15px 0px 15px;
+          padding:10px 15px 10px 15px;
           background:#000; 
           display:inline-block;
           width:auto;
@@ -864,13 +860,7 @@ SITE HEADER STYLES
       
       span.kurnu-description,
       span.forum-description {
-        display:block;
-        font-size:0.6em;
-        font-style:italic;
-        color:#fff;
-        background:#000;
-        padding:10px 15px;
-        width:auto;
+        display:none;
       }
       
     }
@@ -881,6 +871,7 @@ SITE HEADER STYLES
     
     .twoway-navigation-forum {
       text-align:right;
+      float:right;
     }
   
   } 
@@ -905,18 +896,22 @@ and more scalable.
 */
 
 .nav {
+  margin:19px 0 0 0;
   
   ul {
     padding:9;
     margin:0;
 
   	li {
+  	  margin:1px 0 0 0;
   
   		a {
   			display: block;
   			text-decoration: none;
   			padding: 5px 10px;
-  			color:$bones-nav;
+  			color:#fff;
+  			background:$bones-pink;
+  			border-radius:2px;
   
   			/*
   			remember this is for mobile ONLY, so there's no need
