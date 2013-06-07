@@ -337,7 +337,6 @@ ANNOUNCEMENT BLOCK STYLES
     border:1px solid #ffffff;
     padding-bottom:0;
     padding:30px 25px 0 25px;
-    background-size:auto 100%;
     background-repeat:no-repeat;
     background-position:center center;
   }
@@ -348,7 +347,6 @@ ANNOUNCEMENT BLOCK STYLES
     border:1px solid #ffffff;
     padding-bottom:0;
     padding:30px 25px 0 25px;
-    background-size:100% auto;
     background-repeat:no-repeat;
     background-position:center center;
   }
@@ -735,7 +733,7 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	width: 95%;
-	min-width:365px;
+/* 	min-width:365px; */
 	margin: 0 auto;
 }
 
@@ -840,7 +838,6 @@ SITE HEADER STYLES
       font-size:1.6em;
       display:inline-block;
       float:left;
-      width:50%;
       
       a {
         text-decoration:none;
