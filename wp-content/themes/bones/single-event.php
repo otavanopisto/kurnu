@@ -9,7 +9,8 @@
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <?php 
-            $dates = (array) json_decode(get_post_meta(get_the_ID(), 'eventdate', true), true ); 
+            $dates = (array) json_decode(get_post_meta(get_the_ID(), 'eventdate', true), true );
+            sort($dates);
             foreach($dates as $date){
               $date_string .= '<div class="event-date">'. date('d.m.', strtotime($date)) .'</div>';
             }
