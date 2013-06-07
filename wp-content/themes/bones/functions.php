@@ -231,7 +231,9 @@ function the_breadcrumb() {
       }
     } elseif (is_page()) {
       the_title('<span class="current-crumb">', '</span>', true);
-    }
+    } elseif (is_tag()) {
+      single_tag_title('<span class="current-crumb">', '</span>', true);
+    } 
     echo '</div>';
   }
   

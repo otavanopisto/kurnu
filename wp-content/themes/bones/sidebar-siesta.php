@@ -1,4 +1,4 @@
-				<div id="sidebar-article" class="sidebar fivecol clearfix" role="complementary">
+				<div id="sidebar-siesta" class="sidebar fivecol clearfix" role="complementary">
         
           <?php include 'block-siestalisting.php'; ?>
     

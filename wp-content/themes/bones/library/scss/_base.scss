@@ -46,9 +46,21 @@ article.block {
     margin-bottom:0;
     
     .event-dates {
+      margin:0 0 5px 0;
       
       .event-date {
+        background-color:#0099ff;
+        color:#fff;
+        padding:2px 4px;
         display:inline-block;
+        margin:4px 10px 0 0;
+        border:3px solid #fff;
+        box-shadow: -7px 0 15px rgba(0, 0, 0, 0.18);
+        transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+        -webkit-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+        -moz-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+        -o-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
+        -ms-transform: rotate(351deg) scale(1) skew(1deg) translate(0px);
       }
       
     }
@@ -119,10 +131,6 @@ article.block {
     }
   }
   
-}
-
-#main {
-/*   background-color:#fff; */
 }
 
 .home #main {
@@ -325,13 +333,20 @@ EVENTS BLOCK STYLES
 ANNOUNCEMENT BLOCK STYLES
 *********************/
 
+#sidebar-announcement .announcement-container {
+    border:1px solid #ffffff;
+    padding-bottom:0;
+    padding:30px 25px 0 25px;
+    background-repeat:no-repeat;
+    background-position:center center;
+  }
+
 .announcement-wrapper {
   
   .announcement-container {
     border:1px solid #ffffff;
     padding-bottom:0;
     padding:30px 25px 0 25px;
-    background-size:100% auto;
     background-repeat:no-repeat;
     background-position:center center;
   }
@@ -718,8 +733,14 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	width: 95%;
-	min-width:445px;
+/* 	min-width:365px; */
 	margin: 0 auto;
+}
+
+#container #wpucssmagic {
+  min-width:445px;
+  width:95%;
+  margin:0 auto !important;
 }
 
 /*********************
@@ -814,10 +835,9 @@ SITE HEADER STYLES
     .twoway-navigation-kurnu,
     .twoway-navigation-forum {
       padding:20px 0px;
-      font-size:2em;
+      font-size:1.6em;
       display:inline-block;
       float:left;
-      width:50%;
       
       a {
         text-decoration:none;
@@ -827,7 +847,7 @@ SITE HEADER STYLES
 
         
         span {
-          padding:10px 15px 0px 15px;
+          padding:10px 15px 10px 15px;
           background:#000; 
           display:inline-block;
           width:auto;
@@ -837,13 +857,7 @@ SITE HEADER STYLES
       
       span.kurnu-description,
       span.forum-description {
-        display:block;
-        font-size:0.6em;
-        font-style:italic;
-        color:#fff;
-        background:#000;
-        padding:10px 15px;
-        width:auto;
+        display:none;
       }
       
     }
@@ -854,6 +868,7 @@ SITE HEADER STYLES
     
     .twoway-navigation-forum {
       text-align:right;
+      float:right;
     }
   
   } 
@@ -878,18 +893,22 @@ and more scalable.
 */
 
 .nav {
+  margin:19px 0 0 0;
   
   ul {
     padding:9;
     margin:0;
 
   	li {
+  	  margin:1px 0 0 0;
   
   		a {
   			display: block;
   			text-decoration: none;
   			padding: 5px 10px;
-  			color:$bones-nav;
+  			color:#fff;
+  			background:$bones-pink;
+  			border-radius:2px;
   
   			/*
   			remember this is for mobile ONLY, so there's no need
