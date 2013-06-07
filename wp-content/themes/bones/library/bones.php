@@ -410,7 +410,6 @@ function bones_get_the_author_posts_link() {
 }
 
 function construct_siestas($siesta, &$siestas) {
-//   $event = $siesta['eventdate'];
   $event_dates = (array) json_decode($siesta['eventdate'], true );
   foreach($event_dates as $date){
     $siesta['eventdate'] = $date;
