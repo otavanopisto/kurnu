@@ -224,7 +224,7 @@ function the_breadcrumb() {
     bloginfo('name');
     echo "</a> » ";
     if (is_category() || is_single()) {
-      the_category('title_li=');
+      the_category('&');
       if (is_single()) {
         echo " » ";
         the_title('<span class="current-crumb">', '</span>', true);
