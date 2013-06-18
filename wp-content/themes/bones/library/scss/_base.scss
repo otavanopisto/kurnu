@@ -200,7 +200,6 @@ SIESTA BLOCK STYLES
 *********************/
 
 #siesta-listing-wrapper {
-  border-left:1px solid #FF9900;
   position:relative;
   
   .siesta-current {
@@ -271,7 +270,7 @@ SIESTA BLOCK STYLES
 EVENTS BLOCK STYLES
 *********************/
 
-.event-listing-wrapper {
+#event-listing-wrapper {
 
   h3 {
 
@@ -389,7 +388,7 @@ STICKY BLOCK STYLES
 *********************/
 
 .sticky-listing-wrapper {
-  border-left:1px solid #6bff64;
+  border-left:1px solid #5BE100;
 
   h3 {
 
@@ -897,7 +896,7 @@ and more scalable.
   margin:19px 0 0 0;
   
   ul {
-    padding:9;
+    padding:0;
     margin:0;
 
   	li {
@@ -1023,18 +1022,22 @@ POSTS & CONTENT STYLES
 			ul, ol, table, dl {}
 
 			ul, ol {
+			  margin:1em 0 1em 2em;
+			  
 
 				li {}
 
 			}
 
 			ul {
+			  list-style-type:disc;
 
 				li {}
 
 			}
 
 			ol {
+			  list-style-type:decimal;
 
 				li {}
 
@@ -1543,6 +1546,42 @@ SIDEBARS & ASIDES
 		}
 
 	}
+	
+/*********************
+SINGLES STYLES
+*********************/
+
+body.single-event {
+  
+  article {
+
+  }
+  
+}
+
+body.single-siesta {
+  
+  article {
+
+  }
+  
+}
+
+body.single-post {
+  
+  article {
+
+  }
+  
+}
+
+body.single-announcement {
+  
+  article {
+
+  }
+  
+}
 
 /*********************
 FOOTER STYLES

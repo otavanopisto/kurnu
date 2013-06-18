@@ -5,7 +5,7 @@
     
       <?php the_breadcrumb(); ?>
 
-			<div id="main" class="sevencol first clearfix" role="main">
+			<div id="main" class="tencol first clearfix" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <?php 
@@ -29,12 +29,14 @@
               <?php echo $date_string; ?>
             </div>
                           
+            <!-- 
             <p class="comment-count" title="Kommentit">
               <?php
                 $comments_count = wp_count_comments(get_the_ID());
                 echo '<a href="' . get_comments_link() . '">' . $comments_count->total_comments . '</a>';
               ?>
             </p>
+            -->
 
 					</header> <!-- end article header -->
 
@@ -77,8 +79,6 @@
 			</div> <!-- end #main -->
 
       <?php get_sidebar('event'); ?>
-
-			<?php get_sidebar('right'); ?>
 
 		</div> <!-- end #inner-content -->
 
