@@ -117,16 +117,16 @@ NAVIGATION STYLES
   	li {
   		display:inline-block;
   		position: relative;
+      margin:0 1px 0 0;
   
   		a {
   			border-bottom: 0;
         color:$bones-nav;
-        padding:15px 18px;
+        padding:15px;
         display:block;
         text-transform:uppercase;
         background:none;
         border-radius:0px;
-        margin:0 1px 0 0;
   
   			/*
   			you can use hover styles here even though this size
@@ -138,6 +138,15 @@ NAVIGATION STYLES
   
   			}
   		}
+  		
+  		&:hover, &:focus {
+        background-color: $bones-nav;
+        
+        a {
+          color:#fff;
+        }
+  
+      }
   		
   		&.current_page_item a {
   		  background-color: $bones-nav;
@@ -163,12 +172,16 @@ NAVIGATION STYLES
   			  white-space:nowrap;
   
   				a {
-  					padding-left: 10px;
-  					border-right: 0;
+  				  padding:15px;
   					display: block;
+  					background-color: $bones-nav;
+            color:$bones-nav-hover;
+            min-width:200px;
   
   					&:hover,
-  					&:focus {}
+  					&:focus {
+              background-color: darken($bones-nav,9%);
+  					}
   
   					&:link {}
   				}
