@@ -6,7 +6,7 @@
     
       <?php the_breadcrumb(); ?>
 
-			<div id="main" class="sevencol first clearfix" role="main">
+			<div id="main" class="tencol first clearfix" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -36,6 +36,9 @@
                 ?>
           
 						<?php the_content(); ?>
+            
+            <?php wp_link_pages(); ?>
+            
 					</section> <!-- end article section -->
 
 					<footer class="article-footer">
@@ -68,8 +71,6 @@
 			</div> <!-- end #main -->
 
       <?php get_sidebar('article'); ?>
-
-			<?php get_sidebar('right'); ?>
 
 		</div> <!-- end #inner-content -->
 

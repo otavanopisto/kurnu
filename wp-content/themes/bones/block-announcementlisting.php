@@ -10,6 +10,9 @@
   if(!empty($results)) echo '<div id="announcement-listing-wrapper">';
   foreach ($results as $announcement){
     $background = ($announcement['thumbnail_src']) ? 'style="background-image: url('. $announcement['thumbnail_src'] .')"' : '';
+    if ($background == ''){
+      $background = 'style="background-image: url(\''.get_bloginfo('template_directory').'/library/images/default-announcement.png\')"';
+    } 
     echo '<div class="announcement-wrapper">';
     echo '<div class="announcement-container block white" '. $background .'>';
     echo '<div class="announcement-row-wrapper">';

@@ -8,7 +8,7 @@
         
           <?php get_sidebar('left'); ?>
 
-					<div id="main" class="sevencol clearfix" role="main">
+					<div id="main" class="elevencol clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -56,7 +56,7 @@
 
 					</div> <!-- end #main -->
 
-					<?php get_sidebar('right'); ?>
+
 
 				</div> <!-- end #inner-content -->
 

@@ -1,4 +1,4 @@
-				<div id="sidebar-article" class="sidebar fivecol clearfix" role="complementary">
+				<div id="sidebar-article" class="sidebar sixcol clearfix" role="complementary">
         
           <?php include 'block-articlelisting.php'; ?>
     
