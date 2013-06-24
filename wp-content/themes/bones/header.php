@@ -61,8 +61,8 @@
             </div>
             <div class="twoway-navigation-forum">
               <a href="/forum" rel="nofollow">
-                <span>Keskustelu</span>
-                <span class="forum-description">Verkkolehden virallinen keskustelualue</span>
+                <span>Foorumi</span>
+                <span class="forum-description">Verkkolehden virallinen foorumi</span>
               </a>
             </div>            
           </div>
