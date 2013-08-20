@@ -2,511 +2,370 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-20 08:54+0200\n"
+"POT-Creation-Date: 2012-03-02 22:11+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Petja Laitila <petja.laitila@otavanopisto.fi>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
-"Language: \n"
+"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e;_n\n"
-"X-Poedit-Basepath: /home/petja/workspace/kurnu/wp-content/themes/bones\n"
-"X-Poedit-SearchPath-0: /home/petja/workspace/kurnu/wp-content/themes/bones\n"
+"X-Poedit-Basepath: /home/fulgor/GIT/bones\n"
+"Last-Translator: \n"
+"X-Poedit-SearchPath-0: /home/fulgor/GIT/bones\n"
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:12
+#: comments.php:12
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:22
-msgid "<span>No</span> Responses"
+#: comments.php:23
+msgid "Response"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:22
-msgid "<span>One</span> Response"
+#: comments.php:24
+msgid "Responses"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:22
-msgid "<span>%</span> Response"
+#: comments.php:25
+msgid "One"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:50
+#: comments.php:26
+msgid "No"
+msgstr ""
+
+#: comments.php:32
+msgid "to"
+msgstr ""
+
+#: comments.php:59
 msgid "Comments are closed."
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:61
+#: comments.php:70
 msgid "Leave a Reply"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:61
+#: comments.php:70
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:69
-#, php-format
-msgid "You must be %1$slogged in%2$s to post a comment."
+#: comments.php:78
+msgid "You must be"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:77
+#: comments.php:78
+msgid "logged in"
+msgstr ""
+
+#: comments.php:78
+msgid "to post a comment"
+msgstr ""
+
+#: comments.php:86
 msgid "Logged in as"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:77
+#: comments.php:86
 msgid "Log out of this account"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:77
+#: comments.php:86
 msgid "Log out"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:77
-msgid "&raquo;"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:84
+#: comments.php:93
 msgid "Name"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:84
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:89
+#: comments.php:93 comments.php:98
 msgid "(required)"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:85
-msgid "Your Name*"
+#: comments.php:94
+msgid "Your Name"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:89
-msgid "Mail"
+#: comments.php:98
+msgid "Email"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:90
-msgid "Your E-Mail*"
+#: comments.php:99
+msgid "Your Email"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:91
-msgid "(will not be published)"
+#: comments.php:100
+msgid "will not be published"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:95
+#: comments.php:104
 msgid "Website"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:96
-msgid "Got a website?"
+#: comments.php:105
+msgid "Your Website"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:103
-msgid "Your Comment here..."
+#: comments.php:112
+msgid "Your Comment Here..."
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:106
-msgid "Submit"
+#: comments.php:115
+msgid "Submit Comment"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/comments.php:111
+#: comments.php:120
 msgid "You can use these tags"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/index.php:23
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:18
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/tag.php:24
+#: header.php:23
 #, php-format
-msgid "Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under %4$s."
+msgid "Page %s"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/index.php:49
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/page-custom.php:34
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-event.php:53
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-announcement.php:44
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/tag.php:50
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/category.php:45
-msgid "Tags:"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/index.php:64
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:41
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/tag.php:63
-msgid "&laquo; Older Entries"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/index.php:65
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:42
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/tag.php:64
-msgid "Newer Entries &raquo;"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/index.php:74
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/page-custom.php:46
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-event.php:67
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-announcement.php:58
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/tag.php:73
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/category.php:59
-msgid "Oops, Post Not Found!"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/index.php:77
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/page-custom.php:49
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-event.php:70
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-announcement.php:61
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/tag.php:76
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/category.php:62
-msgid "Uh Oh. Something is missing. Try double checking things."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/index.php:80
-msgid "This is the error message in the index.php template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/page-custom.php:23
-#, php-format
-msgid "Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span>."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/page-custom.php:23
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:18
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:185
-msgid "F jS, Y"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/page-custom.php:52
-msgid "This is the error message in the page-custom.php template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-event.php:25
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-announcement.php:19
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/category.php:19
-#, php-format
-msgid "Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&amp;</span> filed under %4$s."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-event.php:73
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/single-announcement.php:64
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/category.php:65
-msgid "This is the error message in the single.php template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:8
-msgid "Search Results for:"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:24
-msgid "Read more &raquo;"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:51
-msgid "Sorry, No Results."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:54
-msgid "Try your search again."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/search.php:57
-msgid "This is the error message in the search.php template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/tag.php:12
-#, php-format
-msgid "Tag Archives: %s"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/tag.php:79
-msgid "This is the error message in the taxonomy-custom_cat.php template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:79
-msgid "Vasen sivupalkki"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:80
-msgid "Vasen sivupalkki."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:89
-msgid "Oikea sivupalkki"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:90
-msgid "Oikea sivupalkki."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:99
-msgid "Artikkelin sivupalkki"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:100
-msgid "Yksittäisen artikkelin keskimmäinen sivupalkki."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:109
-msgid "Siestan sivupalkki"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:110
-msgid "Yksittäisen siestan keskimmäinen sivupalkki."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:119
-msgid "Tapahtuman sivupalkki"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:120
-msgid "Yksittäisen tapahtuman keskimmäinen sivupalkki."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:129
-msgid "Tiedotteen sivupalkki"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:130
-msgid "Yksittäisen tiedotteen keskimmäinen sivupalkki."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:184
-#, php-format
-msgid "<cite class=\"fn\">%s</cite>"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:186
-msgid "(Edit)"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:190
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/functions.php:207
-msgid "Search for:"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/sidebar.php:12
-msgid "Please activate some Widgets."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/404.php:13
-msgid "Epic 404 - Article Not Found"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/404.php:19
-msgid "The article you were looking for was not found, but maybe try looking again!"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/404.php:31
-msgid "This is the 404.php template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/archive-custom_type.php:59
-msgid "This is the error message in the custom posty type archive template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/archive.php:11
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:24
+#: taxonomy-custom_cat.php:22 archive.php:9
 msgid "Posts Categorized:"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/archive.php:16
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
+msgid "Posted"
+msgstr ""
+
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
+msgid "by"
+msgstr ""
+
+#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
+msgid "filed under"
+msgstr ""
+
+#: taxonomy-custom_cat.php:41
+msgid "Read more"
+msgstr ""
+
+#: functions.php:103
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:107
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:124
+msgid "Search for:"
+msgstr ""
+
+#: functions.php:125
+msgid "Search the Site..."
+msgstr ""
+
+#: 404.php:11
+msgid "Epic 404 - Article Not Found"
+msgstr ""
+
+#: 404.php:17
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+
+#: search.php:7
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:23
+msgid "Read more on"
+msgstr ""
+
+#: archive.php:13
 msgid "Posts Tagged:"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/archive.php:25
+#: archive.php:17 author.php:8
 msgid "Posts By:"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/archive.php:30
+#: archive.php:21
 msgid "Daily Archives:"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/archive.php:35
+#: archive.php:25
 msgid "Monthly Archives:"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/archive.php:40
+#: archive.php:29
 msgid "Yearly Archives:"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/archive.php:94
-msgid "This is the error message in the archive.php template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/page.php:51
-msgid "This is the error message in the page.php template."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:40
-msgid "Read More &raquo;"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:24
-msgid "Custom Types"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:25
-msgid "Custom Post"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:26
-msgid "All Custom Posts"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:27
-msgid "Add New"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:28
-msgid "Add New Custom Type"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:29
-msgid "Edit"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:30
-msgid "Edit Post Types"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:31
-msgid "New Post Type"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:32
-msgid "View Post Type"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:33
-msgid "Search Post Type"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:34
-msgid "Nothing found in the Database."
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:35
-msgid "Nothing found in Trash"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:38
-msgid "This is the example custom post type"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:75
-msgid "Custom Categories"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:76
-msgid "Custom Category"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:77
-msgid "Search Custom Categories"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:78
-msgid "All Custom Categories"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:79
-msgid "Parent Custom Category"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:80
-msgid "Parent Custom Category:"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:81
-msgid "Edit Custom Category"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:82
-msgid "Update Custom Category"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:83
-msgid "Add New Custom Category"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:84
-msgid "New Custom Category Name"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:98
+#: single-custom_type.php:43
 msgid "Custom Tags"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:99
+#: embed-tags.php:3
+msgid "Tag"
+msgstr ""
+
+#: embed-tags.php:3
+msgid "Tags"
+msgstr ""
+
+#: image.php:20
+msgid "Read the rest of this entry"
+msgstr ""
+
+#: image.php:38
+msgid "Sorry, no attachments matched your criteria."
+msgstr ""
+
+#: embed-prev_next.php:3
+msgid "&laquo; Older Entries"
+msgstr ""
+
+#: embed-prev_next.php:4
+msgid "Newer Entries &raquo;"
+msgstr ""
+
+#: footer.php:9
+msgid "is powered by"
+msgstr ""
+
+#: embed-not_found.php:3
+msgid "Not Found"
+msgstr ""
+
+#: embed-not_found.php:6
+msgid "Sorry, but the requested resource was not found on this site."
+msgstr ""
+
+#: sidebar.php:15
+msgid "Please activate some Widgets."
+msgstr ""
+
+#: library/bones.php:52
+msgid "Read more &raquo;"
+msgstr ""
+
+#: library/custom-post-type.php:24
+msgid "Custom Types"
+msgstr ""
+
+#: library/custom-post-type.php:25
+msgid "Custom Post"
+msgstr ""
+
+#: library/custom-post-type.php:26
+msgid "Add New"
+msgstr ""
+
+#: library/custom-post-type.php:27
+msgid "Add New Custom Type"
+msgstr ""
+
+#: library/custom-post-type.php:28
+msgid "Edit"
+msgstr ""
+
+#: library/custom-post-type.php:29
+msgid "Edit Post Types"
+msgstr ""
+
+#: library/custom-post-type.php:30
+msgid "New Post Type"
+msgstr ""
+
+#: library/custom-post-type.php:31
+msgid "View Post Type"
+msgstr ""
+
+#: library/custom-post-type.php:32
+msgid "Search Post Type"
+msgstr ""
+
+#: library/custom-post-type.php:33
+msgid "Nothing found in the Database."
+msgstr ""
+
+#: library/custom-post-type.php:34
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: library/custom-post-type.php:37
+msgid "This is the example custom post type"
+msgstr ""
+
+#: library/custom-post-type.php:73
+msgid "Custom Categories"
+msgstr ""
+
+#: library/custom-post-type.php:74
+msgid "Custom Category"
+msgstr ""
+
+#: library/custom-post-type.php:75
+msgid "Search Custom Categories"
+msgstr ""
+
+#: library/custom-post-type.php:76
+msgid "All Custom Categories"
+msgstr ""
+
+#: library/custom-post-type.php:77
+msgid "Parent Custom Category"
+msgstr ""
+
+#: library/custom-post-type.php:78
+msgid "Parent Custom Category:"
+msgstr ""
+
+#: library/custom-post-type.php:79
+msgid "Edit Custom Category"
+msgstr ""
+
+#: library/custom-post-type.php:80
+msgid "Update Custom Category"
+msgstr ""
+
+#: library/custom-post-type.php:81
+msgid "Add New Custom Category"
+msgstr ""
+
+#: library/custom-post-type.php:82
+msgid "New Custom Category Name"
+msgstr ""
+
+#: library/custom-post-type.php:95
 msgid "Custom Tag"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:100
+#: library/custom-post-type.php:96
 msgid "Search Custom Tags"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:101
+#: library/custom-post-type.php:97
 msgid "All Custom Tags"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:102
+#: library/custom-post-type.php:98
 msgid "Parent Custom Tag"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:103
+#: library/custom-post-type.php:99
 msgid "Parent Custom Tag:"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:104
+#: library/custom-post-type.php:100
 msgid "Edit Custom Tag"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:105
+#: library/custom-post-type.php:101
 msgid "Update Custom Tag"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:106
+#: library/custom-post-type.php:102
 msgid "Add New Custom Tag"
 msgstr ""
 
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/custom-post-type.php:107
+#: library/custom-post-type.php:103
 msgid "New Custom Tag Name"
 msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/bones.php:225
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/bones.php:242
-msgid "The Main Menu"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/bones.php:226
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/bones.php:260
-msgid "Footer Links"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/bones.php:312
-msgid "No Related Posts Yet!"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/bones.php:356
-msgid "First"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/bones.php:373
-msgid "Last"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/bones.php:407
-#, php-format
-msgid "Posts by %s"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/admin.php:66
-msgid "j F Y @ g:i a"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/admin.php:78
-msgid "Recently on Themble (Customize on admin.php)"
-msgstr ""
-
-#: /home/petja/workspace/kurnu/wp-content/themes/bones/library/admin.php:125
-msgid "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://themble.com/bones\" target=\"_blank\">Bones</a>."
-msgstr ""
-
