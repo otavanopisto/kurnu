@@ -70,7 +70,7 @@
 					<!-- if you'd like to use the site description you can un-comment it below -->
 					<!-- <?php // bloginfo('description'); ?> -->
 
-
+					<a class="navTrigger" href="#"></a>
 					<nav role="navigation">
 						<?php bones_main_nav(); ?>
 					</nav>
