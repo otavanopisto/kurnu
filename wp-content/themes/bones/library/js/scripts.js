@@ -264,6 +264,6 @@ jQuery(document).ready(function(x) {
 
 jQuery(document).ready(function(){
   jQuery('a.navTrigger').click(function(event){
-    jQuery('div.nav').toggle();
+    jQuery('nav').toggle();
   });
 });
