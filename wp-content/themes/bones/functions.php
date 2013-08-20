@@ -43,7 +43,7 @@ require_once('library/bones.php'); // if you remove this, bones will break
 4. library/translation/translation.php
 	- adding support for other languages
 */
-// require_once('library/translation/translation.php'); // this comes turned off by default
+require_once('library/translation/translation.php'); // this comes turned off by default
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
