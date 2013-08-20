@@ -275,6 +275,10 @@ jQuery(window).resize(function(){
   if (responsive_viewport >= 768) {
     jQuery('nav').show();
   }
+  
+  if (responsive_viewport < 768) {
+    jQuery('nav').hide();
+  }
 
 });
 
