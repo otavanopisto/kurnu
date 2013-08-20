@@ -262,23 +262,37 @@ jQuery(document).ready(function(x) {
     
   });
 
+var waitForFinalEvent = (function () {
+  var timers = {};
+  return function (callback, ms, uniqueId) {
+    if (!uniqueId) {
+      uniqueId = "Don't call this twice without a uniqueId";
+    }
+    if (timers[uniqueId]) {
+      clearTimeout (timers[uniqueId]);
+    }
+    timers[uniqueId] = setTimeout(callback, ms);
+  };
+})();
+
 jQuery(document).ready(function(){
   jQuery('a.navTrigger').click(function(event){
     jQuery('nav').toggle();
   });
 });
 
-jQuery(window).resize(function(){ 
-  /* getting viewport width */
-  var responsive_viewport = jQuery(window).width();
-//  /* if is above or equal to 768px */
-  if (responsive_viewport >= 768) {
-    jQuery('nav').show();
-  }
-  
-  if (responsive_viewport < 768) {
-    jQuery('nav').hide();
-  }
-
+jQuery(window).resize(function(){
+  waitForFinalEvent(function(){
+    /* getting viewport width */
+    var responsive_viewport = jQuery(window).width();
+//    /* if is above or equal to 768px */
+    if (responsive_viewport >= 768) {
+      jQuery('nav').show();
+    }
+    
+    if (responsive_viewport < 768) {
+      jQuery('nav').hide();
+    }
+  }, 500, "resizeUniqueString87u");
 });
 
