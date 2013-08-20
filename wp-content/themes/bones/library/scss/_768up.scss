@@ -350,6 +350,61 @@ SIDEBARS & ASIDES
 	.widget_text {}
 	.textwidget p {}
 
+/*********************
+ANNOUNCEMENT BLOCK STYLES
+*********************/
+
+#sidebar-announcement .announcement-container {
+    border:1px solid #ffffff;
+    padding-bottom:0;
+    padding:30px 25px 0 25px;
+    background-repeat:no-repeat;
+    background-position:center center;
+  }
+
+.announcement-wrapper {
+  
+  .announcement-container {
+    border:1px solid #ffffff;
+    padding-bottom:0;
+    padding:30px 25px 0 25px;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:auto auto;
+  }
+  
+  .announcement-row-wrapper {
+    box-shadow:0 -8px 12px rgba(0, 0, 0, 0.8);
+    opacity:0.95;
+  }
+  
+  .announcement-row {
+    margin:15px 0 0 0;
+    background:#fff;
+    padding:5px 15px 0 15px;
+    
+    &:last-child {
+      margin:0;
+      padding:10px 15px;
+  }
+    
+  }
+  
+  .announcement-date {
+
+  }
+  
+  .announcement-title {
+    font-size:1.7em;
+    font-weight:300;
+    padding:1px 0;
+    
+    a {
+      text-decoration:none;
+    }
+  }
+}
+
 
 /*********************
 FOOTER STYLES

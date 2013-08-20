@@ -187,19 +187,15 @@ msgstr ""
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:22
 msgid "<span>No</span> Responses"
-msgstr "<span>Ei</span> vastauksia"
+msgstr "<span>Ei</span> kommentteja"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:22
 msgid "<span>One</span> Response"
-msgstr "<span>Yksi</span> vastaus"
-
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:22
-msgid "<span>%</span> Response"
-msgstr "<span>%</span> vastaus"
+msgstr "<span>Yksi</span> kommentti"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:22
 msgid "<span>%</span> Responses"
-msgstr "<span>%</span> vastausta"
+msgstr "<span>%</span> kommenttia"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:50
 msgid "Comments are closed."
