@@ -355,6 +355,13 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
+.footer {
+  clear: both;
+  background:#000;
+  min-height:200px;
+  margin:0;
+}
+
 /*
 you'll probably need to do quite a bit
 of overriding here if you styled them for
