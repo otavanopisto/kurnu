@@ -267,3 +267,14 @@ jQuery(document).ready(function(){
     jQuery('nav').toggle();
   });
 });
+
+jQuery(window).resize(function(){ 
+  /* getting viewport width */
+  var responsive_viewport = jQuery(window).width();
+//  /* if is above or equal to 768px */
+  if (responsive_viewport >= 768) {
+    jQuery('nav').show();
+  }
+
+});
+
