@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
     
     /* if is below 481px */
     if (responsive_viewport < 481) {
-    
+
     } /* end smallest screen */
     
     /* if is larger than 481px */
@@ -262,4 +262,8 @@ jQuery(document).ready(function(x) {
     
   });
 
-
+jQuery(document).ready(function(){
+  jQuery('a.navTrigger').click(function(event){
+    jQuery('div.nav').toggle();
+  });
+});

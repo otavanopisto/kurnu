@@ -20,6 +20,7 @@ The comments page for Bones
 
 
 <?php if ( have_comments() ) : ?>
+
 	<h3 id="comments" class="h2"><?php comments_number(__('<span>No</span> Responses', 'bonestheme'), __('<span>One</span> Response', 'bonestheme'), __('<span>%</span> Responses','bonestheme') );?> - &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<nav id="comment-nav">
