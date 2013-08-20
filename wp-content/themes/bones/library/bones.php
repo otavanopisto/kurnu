@@ -128,10 +128,10 @@ function bones_scripts_and_styles() {
     // modernizr (without media query polyfill)
     wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
-    // modernizr (without media query polyfill)
+    // jQuery UI Flip library
     wp_register_script( 'jquery-ui-flip', get_stylesheet_directory_uri() . '/library/js/libs/jquery.flip.js', array(), '0.9.9', true );
-
-
+    // jQuery touchSwipe library
+    wp_register_script( 'jquery-touchswipe', get_stylesheet_directory_uri() . '/library/js/libs/jquery.touchSwipe.min.js', array(), '1.0.0', true );
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 
@@ -150,7 +150,7 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
     wp_enqueue_style('bones-ie-only');
-
+    
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
     /*
@@ -163,6 +163,7 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'jquery-ui-core' );
     wp_enqueue_script( 'jquery-effects-core' );
     wp_enqueue_script( 'jquery-ui-flip' );
+    wp_enqueue_script( 'jquery-touchswipe' );
     add_thickbox();
 
     wp_register_style( 'hacks', get_stylesheet_directory_uri() . '/library/css/hacks.css', array(), '', 'all');
