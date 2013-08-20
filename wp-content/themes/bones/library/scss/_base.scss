@@ -21,7 +21,7 @@ body {
 	line-height: 1.5;
 	color: #565656;
 	margin:0 5px;
-	background-color:#182909;
+	background:#182909;
 }
 
 header.header,
@@ -349,6 +349,7 @@ ANNOUNCEMENT BLOCK STYLES
     padding:30px 25px 0 25px;
     background-repeat:no-repeat;
     background-position:center center;
+    background-size:100% 100%;
   }
   
   .announcement-row-wrapper {
@@ -892,6 +893,17 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
+#inner-header {
+  
+  a.navTrigger {
+    display:block;
+  }
+}
+
+nav {
+  display:none;
+}
+
 .nav {
   margin:19px 0 0 0;
   
@@ -917,7 +929,7 @@ and more scalable.
   			keep this file as small as possible!
   			*/
   			&:hover, &:focus {
-  
+          color:#000;
   			}
   		}
   
