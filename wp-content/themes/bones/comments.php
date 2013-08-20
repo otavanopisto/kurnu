@@ -19,7 +19,7 @@ The comments page for Bones
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments" class="h2"><?php comments_number(__('<span>No</span> Responses', 'bonestheme'), __('<span>One</span> Response', 'bonestheme'), _n('<span>%</span> Response', '<span>%</span> Responses', get_comments_number(),'bonestheme') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments" class="h2"><?php comments_number(__('<span>No</span> Responses', 'bonestheme'), __('<span>One</span> Response', 'bonestheme'), _n('<span>%</span> Response', '<span>%</span> Responses', get_comments_number(),'bonestheme') );?> - &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<nav id="comment-nav">
 		<ul class="clearfix">
@@ -74,8 +74,10 @@ The comments page for Bones
 
 	<?php if ( is_user_logged_in() ) : ?>
 
+  <!-- 
 	<p class="comments-logged-in-as"><?php _e("Logged in as", "bonestheme"); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e("Log out of this account", "bonestheme"); ?>"><?php _e("Log out", "bonestheme"); ?> <?php _e("&raquo;", "bonestheme"); ?></a></p>
-
+  -->
+  
 	<?php else : ?>
 
 	<ul id="comment-form-elements" class="clearfix">

@@ -1,0 +1,578 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp theme bones\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-20 09:04+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-Basepath: /home/fulgor/GIT/bones\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: /Users/lankinen/workspace/Kurnu/wp-content/themes/"
+"bones\n"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/404.php:13
+msgid "Epic 404 - Article Not Found"
+msgstr "Artikkelia ei löytynyt"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/404.php:19
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr "Artikkelia jota kaipailit ei löytynyt. Yritäppäs uudelleen!"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/404.php:31
+msgid "This is the 404.php template."
+msgstr "Tämä olla 404.php tenplaatti"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:19
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:23
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:22
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
+"<span class=\"author\">%3$s</span>."
+msgstr ""
+"Kirjoitettu <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> - "
+"kirjoittajana <span class=\"author\">%3$s</span>"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:19
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:52
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:185
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:23
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:22
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:18
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:34
+msgid "F jS, Y"
+msgstr "F jS, Y"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:43
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:78
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:64
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:41
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:63
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:57
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Vanhemmat kirjoitukset"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:44
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:79
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:65
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:42
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:64
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:58
+msgid "Newer Entries &raquo;"
+msgstr "Uudemmat kirjoitukset &raquo;"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:53
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:88
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:59
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:74
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:46
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:45
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-announcement.php:58
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:67
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:58
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:59
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:73
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:67
+msgid "Oops, Post Not Found!"
+msgstr "Hups, artikkelia ei löytynyt!"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:56
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:91
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:62
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:77
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:49
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:48
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-announcement.php:61
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:70
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:61
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:62
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:76
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:70
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr "Ohhoh. Jotakin on hukassa. Tarkistappas uudelleen, pari kertaa."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:59
+msgid "This is the error message in the custom posty type archive template."
+msgstr "This is the error message in the custom posty type archive template."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:11
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:24
+msgid "Posts Categorized:"
+msgstr "Artikkelit kategoriassa"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:16
+msgid "Posts Tagged:"
+msgstr "Artikkelit joissa tagi"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:25
+msgid "Posts By:"
+msgstr "Artikkelit jotka kirjoittanut"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:30
+msgid "Daily Archives:"
+msgstr "Daily Archives:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:35
+msgid "Monthly Archives:"
+msgstr "Monthly Archives:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:40
+msgid "Yearly Archives:"
+msgstr "Yearly Archives:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:52
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:23
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:18
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:24
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:34
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
+"<span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under "
+"%4$s."
+msgstr ""
+"Kirjoitettu <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> - "
+"kirjoittajana <span class=\"author\">%3$s</span> kategoriassa %4$s."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:94
+msgid "This is the error message in the archive.php template."
+msgstr "This is the error message in the archive.php template."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:19
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-announcement.php:19
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:25
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:19
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:19
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
+"<span class=\"author\">%3$s</span> <span class=\"amp\">&amp;</span> filed "
+"under %4$s."
+msgstr ""
+"Kirjoitettu <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> - "
+"kirjoittajana <span class=\"author\">%3$s</span> kategoriassa %4$s."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:45
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:49
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:34
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:33
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-announcement.php:44
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:53
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:44
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:45
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:50
+msgid "Tags:"
+msgstr "Tagit:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:65
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-announcement.php:64
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:73
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:64
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:65
+msgid "This is the error message in the single.php template."
+msgstr "This is the error message in the single.php template."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Tämä artikkelin kommentit on salasana suojattu. Kirjoita vaadittu salasana "
+"nähdäksesi kommentit."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:22
+msgid "<span>No</span> Responses"
+msgstr "<span>Ei</span> vastauksia"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:22
+msgid "<span>One</span> Response"
+msgstr "<span>Yksi</span> vastaus"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:22
+msgid "<span>%</span> Response"
+msgstr "<span>%</span> vastaus"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:22
+msgid "<span>%</span> Responses"
+msgstr "<span>%</span> vastausta"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:50
+msgid "Comments are closed."
+msgstr "Kommentointi on suljettu."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:61
+msgid "Leave a Reply"
+msgstr "Jätä kommentti"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:61
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Vastaa viestiin %s"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:69
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr "%1$sKirjaudu sisään%2$s kirjoittaaksesi kommentin."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:77
+msgid "Logged in as"
+msgstr "Kirjautunut käyttäjätilille"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:77
+msgid "Log out of this account"
+msgstr "Kirjaudu ulos tältä käyttäjätililtä"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:77
+msgid "Log out"
+msgstr "Kirjaudu ulos"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:77
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:84
+msgid "Name"
+msgstr "Nimi"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:84
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:89
+msgid "(required)"
+msgstr "(pakollinen)"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:85
+msgid "Your Name*"
+msgstr "Nimi*"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:89
+msgid "Mail"
+msgstr "Sähköpostiosoite"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:90
+msgid "Your E-Mail*"
+msgstr "Sähköpostiosoite*"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:91
+msgid "(will not be published)"
+msgstr "(ei näytetä muille)"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:95
+msgid "Website"
+msgstr "www-osoite"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:96
+msgid "Got a website?"
+msgstr "www-sivua?"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:103
+msgid "Your Comment here..."
+msgstr "Kirjoita kommenttisi tänne..."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:106
+msgid "Submit"
+msgstr "Tallenna kommentti"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/comments.php:111
+msgid "You can use these tags"
+msgstr "Voit käyttää seuraavia tageja"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:79
+msgid "Vasen sivupalkki"
+msgstr " Vasen sivupalkki"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:80
+msgid "Vasen sivupalkki."
+msgstr " Vasen sivupalkki."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:89
+msgid "Oikea sivupalkki"
+msgstr "Oikea sivupalkki"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:90
+msgid "Oikea sivupalkki."
+msgstr "Oikea sivupalkki."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:99
+msgid "Artikkelin sivupalkki"
+msgstr "Artikkelin sivupalkki"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:100
+msgid "Yksittäisen artikkelin keskimmäinen sivupalkki."
+msgstr "Yksittäisen artikkelin keskimmäinen sivupalkki."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:109
+msgid "Siestan sivupalkki"
+msgstr "Siestan sivupalkki"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:110
+msgid "Yksittäisen siestan keskimmäinen sivupalkki."
+msgstr "Yksittäisen siestan keskimmäinen sivupalkki."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:119
+msgid "Tapahtuman sivupalkki"
+msgstr "Tapahtuman sivupalkki"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:120
+msgid "Yksittäisen tapahtuman keskimmäinen sivupalkki."
+msgstr "Yksittäisen tapahtuman keskimmäinen sivupalkki."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:129
+msgid "Tiedotteen sivupalkki"
+msgstr "Tiedotteen sivupalkki"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:130
+msgid "Yksittäisen tiedotteen keskimmäinen sivupalkki."
+msgstr "Yksittäisen tiedotteen keskimmäinen sivupalkki."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:184
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:186
+msgid "(Edit)"
+msgstr "(Muokkaa)"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:190
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa hyväksyntää."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:207
+msgid "Search for:"
+msgstr "Hae:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:80
+msgid "This is the error message in the index.php template."
+msgstr "This is the error message in the index.php template."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:52
+msgid "This is the error message in the page-custom.php template."
+msgstr "This is the error message in the page-custom.php template."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:51
+msgid "This is the error message in the page.php template."
+msgstr "This is the error message in the page.php template."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:8
+msgid "Search Results for:"
+msgstr "Hakutulokset:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:24
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:391
+msgid "Read more &raquo;"
+msgstr "Lue lisää &raquo;"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:51
+msgid "Sorry, No Results."
+msgstr "Hakusi ei tuottanut tuloksia."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:54
+msgid "Try your search again."
+msgstr "Yritä uudelleen eri hakukriteerillä."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:57
+msgid "This is the error message in the search.php template."
+msgstr "This is the error message in the search.php template."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/sidebar.php:12
+msgid "Please activate some Widgets."
+msgstr "Aktivoi vitkuttimia."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:12
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Tagi arkisto: %s"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:79
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:73
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr "This is the error message in the taxonomy-custom_cat.php template."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:40
+msgid "Read More &raquo;"
+msgstr "Lue lisää &raquo;"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/admin.php:66
+msgid "j F Y @ g:i a"
+msgstr "j F Y @ g:i a"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/admin.php:78
+msgid "Recently on Themble (Customize on admin.php)"
+msgstr "Recently on Themble (Customize on admin.php)"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/admin.php:125
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
+"themble.com/bones\" target=\"_blank\">Bones</a>."
+msgstr ""
+"<span id=\"footer-thankyou\">Sivuston toteuttanut <a href=\"http://www."
+"otavanopisto.fi\" target=\"_blank\">Otavan Opisto</a></span>. Rakennettu <a "
+"href=\"http://themble.com/bones\" target=\"_blank\">Bones</a> -teeman avulla."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:224
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:241
+msgid "The Main Menu"
+msgstr "Päävalikko"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:225
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:259
+msgid "Footer Links"
+msgstr "Alapalkin linkit"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:311
+msgid "No Related Posts Yet!"
+msgstr "No Related Posts Yet!"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:355
+msgid "First"
+msgstr "Ensimmäinen"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:372
+msgid "Last"
+msgstr "Viimeinen"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:391
+msgid "Read"
+msgstr "Lue"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/bones.php:406
+#, php-format
+msgid "Posts by %s"
+msgstr "Artikkelien kirjoittaja %s"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:24
+msgid "Custom Types"
+msgstr "Custom Types"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:25
+msgid "Custom Post"
+msgstr "Custom Post"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:26
+msgid "All Custom Posts"
+msgstr "All Custom Posts"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:27
+msgid "Add New"
+msgstr "Add New"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:28
+msgid "Add New Custom Type"
+msgstr "Add New Custom Type"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:29
+msgid "Edit"
+msgstr "Edit"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:30
+msgid "Edit Post Types"
+msgstr "Edit Post Types"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:31
+msgid "New Post Type"
+msgstr "New Post Type"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:32
+msgid "View Post Type"
+msgstr "View Post Type"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:33
+msgid "Search Post Type"
+msgstr "Search Post Type"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:34
+msgid "Nothing found in the Database."
+msgstr "Nothing found in the Database."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:35
+msgid "Nothing found in Trash"
+msgstr "Nothing found in Trash"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:38
+msgid "This is the example custom post type"
+msgstr "This is the example custom post type"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:75
+msgid "Custom Categories"
+msgstr "Custom Categories"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:76
+msgid "Custom Category"
+msgstr "Custom Category"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:77
+msgid "Search Custom Categories"
+msgstr "Search Custom Categories"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:78
+msgid "All Custom Categories"
+msgstr "All Custom Categories"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:79
+msgid "Parent Custom Category"
+msgstr "Parent Custom Category"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:80
+msgid "Parent Custom Category:"
+msgstr "Parent Custom Category:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:81
+msgid "Edit Custom Category"
+msgstr "Edit Custom Category"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:82
+msgid "Update Custom Category"
+msgstr "Update Custom Category"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:83
+msgid "Add New Custom Category"
+msgstr "Add New Custom Category"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:84
+msgid "New Custom Category Name"
+msgstr "New Custom Category Name"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:98
+msgid "Custom Tags"
+msgstr "Custom Tags"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:99
+msgid "Custom Tag"
+msgstr "Custom Tag"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:100
+msgid "Search Custom Tags"
+msgstr "Search Custom Tags"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:101
+msgid "All Custom Tags"
+msgstr "All Custom Tags"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:102
+msgid "Parent Custom Tag"
+msgstr "Parent Custom Tag"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:103
+msgid "Parent Custom Tag:"
+msgstr "Parent Custom Tag:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:104
+msgid "Edit Custom Tag"
+msgstr "Edit Custom Tag"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:105
+msgid "Update Custom Tag"
+msgstr "Update Custom Tag"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:106
+msgid "Add New Custom Tag"
+msgstr "Add New Custom Tag"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:107
+msgid "New Custom Tag Name"
+msgstr "New Custom Tag Name"
