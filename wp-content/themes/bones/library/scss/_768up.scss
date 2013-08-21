@@ -18,7 +18,7 @@ GENERAL STYLES
 *********************/
 
 body {
-  margin:0;
+  margin:0 10px;
   background-image:url('../images/main-bg.jpg');
   background-repeat:no-repeat;
   background-position:center 0px;
@@ -30,11 +30,11 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	min-width:720px;
+	min-width:1010px;
 }
 
 #container #wpucssmagic {
-  min-width:720px;
+  min-width:1010px;
 }
 
 /*********************
@@ -104,6 +104,17 @@ SITE HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
+
+#inner-header {
+  
+  a.navTrigger {
+    display:none;
+  }
+}
+
+nav {
+  display:block;
+}
 
 .nav {
 	background: #fff;
@@ -468,8 +479,4 @@ KALIS-TV BLOCK STYLE
 
 #vimeoRecent {
   width:100%;
-  
-
-  
 }
-
