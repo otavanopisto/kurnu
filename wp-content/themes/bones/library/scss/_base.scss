@@ -1654,8 +1654,29 @@ BOX-SIZING OVERRIDES
 *********************/
 
 .sidebar-event-date,
-#siesta-listing-wrapper {
+#siesta-listing-wrapper,
+#phpbb * {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
+
+/*********************
+PHPBB OVERRIDES
+*********************/
+
+#container {
+  
+  #wpucssmagic .wpucssmagic #page-body {
+    padding-bottom:10px;
+  }
+  
+  #wpucssmagic .wpucssmagic #footer {
+    position:relative;
+    height:auto;
+    padding-bottom:10px;
+  }
+  
+}
+
+
