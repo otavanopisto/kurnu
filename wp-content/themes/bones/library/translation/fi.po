@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-26 14:43+0200\n"
+"POT-Creation-Date: 2013-08-26 14:47+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -338,9 +338,9 @@ msgstr "Kommenttisi odottaa hyväksyntää."
 msgid "Search for:"
 msgstr "Hae:"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:227
-msgid "Category:"
-msgstr "Kategoria:"
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:228
+msgid "Category: "
+msgstr "Kategoria: "
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:236
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:13
