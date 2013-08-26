@@ -340,13 +340,13 @@ msgstr "Hae:"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:228
 msgid "Category: "
-msgstr "Kategoria: "
+msgstr "Artikkelit jotka ovat kategoriassa"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:236
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:13
 #, php-format
 msgid "Tag Archives: %s"
-msgstr "Tagi: %s"
+msgstr "Artikkelit joilla on tagi<b>%s</b>"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:241
 msgid "Posts By:"

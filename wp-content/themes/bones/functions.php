@@ -225,7 +225,7 @@ function the_breadcrumb() {
     echo "</a> » ";
     if (is_category()) {
       global $post;
-      echo '<span class="current-crumb">' . __('Category: ', 'bonestheme') . single_cat_title('', false) . '</span>';    
+      echo '<span class="current-crumb">' . __('Category: ', 'bonestheme') . '<b>' . single_cat_title('', false) . '</b></span>';    
     } elseif (is_single()) {
         the_title('<span class="current-crumb">', '</span>', true);
     } elseif (is_page()) {
