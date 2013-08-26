@@ -9,7 +9,7 @@
   				<div id="main" class="eightcol first clearfix" role="main">
           
             <article class="block white">
-              <h1 class="archive-title h2"><?php printf( __( 'Tag Archives: %s', 'twentytwelve' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
+              <h1 class="archive-title h2"><?php printf( __( 'Tag Archives: %s', 'bonestheme' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
             </article>
             
   					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
