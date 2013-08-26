@@ -694,6 +694,11 @@ style a page via class
   .current-crumb {
     display:inline-block;
     padding: 0 8px;
+    
+    b {
+      padding: 0 4px;
+      font-style:italic;
+    }
   }
   
 }

@@ -232,8 +232,19 @@ function the_breadcrumb() {
     } elseif (is_page()) {
       the_title('<span class="current-crumb">', '</span>', true);
     } elseif (is_tag()) {
-      single_tag_title('<span class="current-crumb">', '</span>', true);
-    } 
+        echo '<span class="current-crumb">';
+        echo printf( __( 'Tag Archives: %s', 'bonestheme' ), single_tag_title('', false) );
+        echo '</span>';
+    } elseif (is_author()) {
+        global $post;
+        $author_id = $post->post_author;
+        echo '<span class="current-crumb">';
+        echo _e("Posts By:", "bonestheme"); 
+        echo "<b>";
+        echo the_author_meta('display_name', $author_id);
+        echo "</b>";
+        echo '</span>';
+     } 
     echo '</div>';
   }
   

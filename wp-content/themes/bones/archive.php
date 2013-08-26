@@ -22,13 +22,6 @@
 								global $post;
 								$author_id = $post->post_author;
 							?>
-                <article class="block white">
-  								<h1 class="h2">
-  
-  									<span><?php _e("Posts By:", "bonestheme"); ?></span> <?php the_author_meta('display_name', $author_id); ?>
-  
-  								</h1>
-                </article>
 							<?php } elseif (is_day()) { ?>
 								<h1 class="archive-title h2">
 									<span><?php _e("Daily Archives:", "bonestheme"); ?></span> <?php the_time('l, F j, Y'); ?>
