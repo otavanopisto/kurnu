@@ -48,6 +48,13 @@
 									<p class="byline vcard"><?php
 										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_category_list(', '));
 									?></p>
+                  
+                  <p class="comment-count" title="Kommentit">
+                    <?php
+                      $comments_count = wp_count_comments(get_the_ID());
+                      echo '<a href="' . get_comments_link() . '">' . $comments_count->total_comments . '</a>';
+                    ?>
+                  </p>
 
 								</header> <!-- end article header -->
 
@@ -60,12 +67,15 @@
                   ?>
 
 									<?php the_excerpt(); ?>
+                  
+                  <p class="read-more"><a href="<?php the_permalink() ?>">Lue lis&auml;&auml;</a></p>
 
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
+                  <p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?></p>
 
-								</footer> <!-- end article footer -->
+                </footer> <!-- end article footer -->
 
 							</article> <!-- end article -->
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-26 11:58+0200\n"
+"POT-Creation-Date: 2013-08-26 14:43+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -41,7 +41,7 @@ msgstr ""
 "kirjoittajana <span class=\"author\">%3$s</span>"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:19
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:52
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:49
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:185
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:23
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:22
@@ -51,26 +51,26 @@ msgid "F jS, Y"
 msgstr "F jS, Y"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:43
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:78
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:89
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:64
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:41
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:63
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:65
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:57
 msgid "&laquo; Older Entries"
 msgstr "&laquo; Vanhemmat kirjoitukset"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:44
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:79
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:90
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:65
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:42
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:64
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:66
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:58
 msgid "Newer Entries &raquo;"
 msgstr "Uudemmat kirjoitukset &raquo;"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:53
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:88
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:59
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:99
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:62
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:74
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:46
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:45
@@ -78,14 +78,14 @@ msgstr "Uudemmat kirjoitukset &raquo;"
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:67
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:58
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:59
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:73
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:75
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:67
 msgid "Oops, Post Not Found!"
 msgstr "Hups, artikkelia ei löytynyt!"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:56
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:91
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:62
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:102
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:65
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:77
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:49
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:48
@@ -93,7 +93,7 @@ msgstr "Hups, artikkelia ei löytynyt!"
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:70
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:61
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:62
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:76
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:78
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:70
 msgid "Uh Oh. Something is missing. Try double checking things."
 msgstr "Ohhoh. Jotakin on hukassa. Tarkistappas uudelleen, pari kertaa."
@@ -102,35 +102,31 @@ msgstr "Ohhoh. Jotakin on hukassa. Tarkistappas uudelleen, pari kertaa."
 msgid "This is the error message in the custom posty type archive template."
 msgstr "This is the error message in the custom posty type archive template."
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:11
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:13
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:24
 msgid "Posts Categorized:"
 msgstr "Artikkelit kategoriassa"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:16
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:18
 msgid "Posts Tagged:"
 msgstr "Artikkelit joissa tagi"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:25
-msgid "Posts By:"
-msgstr "Artikkelit jotka on kirjoittanut"
-
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:30
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:27
 msgid "Daily Archives:"
 msgstr "Daily Archives:"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:35
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:32
 msgid "Monthly Archives:"
 msgstr "Monthly Archives:"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:40
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:37
 msgid "Yearly Archives:"
 msgstr "Yearly Archives:"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:52
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:49
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:23
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:18
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:24
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:26
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:34
 #, php-format
 msgid ""
@@ -141,7 +137,20 @@ msgstr ""
 "Kirjoitettu <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> - "
 "kirjoittajana <span class=\"author\">%3$s</span> kategoriassa %4$s."
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:94
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:76
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:48
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:49
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:34
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:33
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-announcement.php:46
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:53
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:44
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:45
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:52
+msgid "Tags:"
+msgstr "Tagit:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:105
 msgid "This is the error message in the archive.php template."
 msgstr "This is the error message in the archive.php template."
 
@@ -159,19 +168,7 @@ msgstr ""
 "Kirjoitettu <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> - "
 "kirjoittajana <span class=\"author\">%3$s</span> kategoriassa %4$s."
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:45
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:49
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:34
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:33
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-announcement.php:46
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:53
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:44
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single.php:45
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:50
-msgid "Tags:"
-msgstr "Tagit:"
-
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:65
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:68
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-announcement.php:66
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-event.php:73
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/single-siesta.php:64
@@ -341,6 +338,20 @@ msgstr "Kommenttisi odottaa hyväksyntää."
 msgid "Search for:"
 msgstr "Hae:"
 
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:227
+msgid "Category:"
+msgstr "Kategoria:"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:236
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:13
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Tagi: %s"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:241
+msgid "Posts By:"
+msgstr "Artikkelit jotka on kirjoittanut"
+
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/index.php:80
 msgid "This is the error message in the index.php template."
 msgstr "This is the error message in the index.php template."
@@ -377,12 +388,7 @@ msgstr "This is the error message in the search.php template."
 msgid "Please activate some Widgets."
 msgstr "Aktivoi vitkuttimia."
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:12
-#, php-format
-msgid "Tag Archives: %s"
-msgstr "Tagi arkisto: %s"
-
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:79
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:81
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:73
 msgid "This is the error message in the taxonomy-custom_cat.php template."
 msgstr "This is the error message in the taxonomy-custom_cat.php template."
