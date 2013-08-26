@@ -6,11 +6,13 @@
         
           <?php the_breadcrumb(); ?>
 
-  				<div id="main" class="eightcol first clearfix" role="main">
+  				<div id="main" class="tencol first clearfix" role="main">
           
+            <!--  
             <article class="block white">
-              <h1 class="archive-title h2"><?php printf( __( 'Tag Archives: %s', 'bonestheme' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
+              <h3 class="archive-title h2"><?php printf( __( 'Tag Archives: %s', 'bonestheme' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h3>
             </article>
+            -->
             
   					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   
