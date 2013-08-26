@@ -223,12 +223,13 @@ function the_breadcrumb() {
     echo '">';
     bloginfo('name');
     echo "</a> » ";
-    if (is_category() || is_single()) {
-      the_category('&');
-      if (is_single()) {
-        echo " » ";
+    if (is_category()) {
+      global $post;
+      echo __('Category: ') . single_cat_title('', false);    
+    } elseif (is_single()) {
+//         echo " » ";
         the_title('<span class="current-crumb">', '</span>', true);
-      }
+      
     } elseif (is_page()) {
       the_title('<span class="current-crumb">', '</span>', true);
     } elseif (is_tag()) {
