@@ -1,5 +1,6 @@
 <?php 
 global $post;
+$announcement_results = array();
 if($post->post_type != 'announcement'){
   $announcement_args = array();
   $announcement_args['limit'] = 1;
@@ -9,6 +10,7 @@ if($post->post_type != 'announcement'){
   $announcement_results = $announcement_Q->get_posts();
 }
 
+$siesta_results = array();
 if($post->post_type != 'siesta'){
 $siesta_args = array();
 $siesta_args['limit'] = 1;
@@ -18,6 +20,7 @@ $siesta_Q = new GetPostsQuery($siesta_args);
 $siesta_results = $siesta_Q->get_posts();
 }
 
+$event_results = array();
 if($post->post_type != 'event'){
 $event_args = array();
 $event_args['post_type'] = 'event';
@@ -28,6 +31,7 @@ $event_Q = new GetPostsQuery($event_args);
 $event_results = $event_Q->get_posts();
 }
 
+$article_results = array();
 if($post->post_type != 'post'){
 $article_args = array();
 $article_args['post_type'] = 'post';
