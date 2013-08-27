@@ -24,7 +24,11 @@ body {
 	background:#182909;
 }
 
-header.header,
+header.header {
+  margin-bottom:0px;
+}
+
+.home header.header,
 #main article:last-child {
   margin-bottom:20px;
 }
@@ -688,7 +692,10 @@ style a page via class
 #content .breadcrumb-container {
   padding:10px;
   background:#fff;
-  margin:0 2px 20px 2px;
+  margin:0 0 20px 0;
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  border-top:1px solid #f2f2f2;
   
   a, 
   .current-crumb {
@@ -1557,6 +1564,83 @@ COMMENT FORM STYLES
 	.nocomments {
 		margin: 0 20px 1.1em;
 	}
+	
+	
+/*********************
+SIDEBARS & ASIDES
+*********************/
+	
+.categorymix-listing-wrapper {
+  
+  .announcement-wrapper,
+  .event-wrapper,
+  .article-wrapper,
+  .siesta-wrapper {
+    margin:0 0 20px 0;
+    border-bottom:4px solid #f6f6f6;
+    padding:0 0 20px 0;
+  }
+  
+  .announcement-wrapper:last-child,
+  .event-wrapper:last-child,
+  .article-wrapper:last-child,
+  .siesta-wrapper:last-child {
+    margin:0 0 10px 0;
+    border-bottom:0;
+    padding:0;
+  }
+  
+  .announcement-category-title {
+  
+    h2 {
+      font-size:1.5em;
+      font-weight:300;
+      margin:0 0 10px 0;
+      text-transform:uppercase;
+    }
+  
+  }
+  
+  .siesta-category-title {
+
+    h2 {
+      font-size:1.5em;
+      font-weight:300;
+      margin:0 0 10px 0;
+      text-transform:uppercase;
+    }
+  
+
+  }
+  
+  .article-category-title {
+
+    h2 {
+      font-size:1.5em;
+      font-weight:300;
+      margin:0 0 10px 0;
+      text-transform:uppercase;
+    }  
+  
+
+  }
+  
+  .event-category-title {
+    
+    h2 {
+      font-size:1.5em;
+      font-weight:300;
+      margin:0 0 10px 0;
+      text-transform:uppercase;
+    }
+  
+  }
+  
+  .entry-content {
+    margin:0 0 10px 0;
+  }
+  
+}
 
 /*********************
 SIDEBARS & ASIDES
