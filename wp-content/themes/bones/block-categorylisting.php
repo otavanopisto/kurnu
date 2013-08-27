@@ -74,7 +74,6 @@ echo '<div class="categorymix-listing-wrapper  block white">';
     echo '<div class="event-category-title">';
     echo '<h2 class="h2"><a href="'. $event['permalink'] .'" rel="bookmark" title="'. $event['post_title'] .'">'. $event['post_title'] .'</a></h2>';
     echo '</div>';
-  
     echo '<div class="entry-content clearfix">';
     echo $event['post_excerpt'];
     echo '</div>';
