@@ -75,7 +75,7 @@
 
           <!-- <?php get_sidebar('article'); ?> -->
 
-					<?php get_sidebar('right'); ?>
+					<!-- <?php get_sidebar('right'); ?> -->
 
 				</div> <!-- end #inner-content -->
 
