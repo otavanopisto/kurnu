@@ -44,6 +44,7 @@ $article_results = $article_Q->get_posts();
 echo '<div class="categorymix-listing-wrapper  block white">';
   foreach ($announcement_results as $announcement){
     echo '<div class="announcement-wrapper" id="post-'. $announcement['ID'] .'">';
+    echo '<div class="announcement-vertical-title">Tiedote</div>';
     echo '<div class="announcement-category-title">';
     echo '<h2 class="h2"><a href="'. $announcement['permalink'] .'" rel="bookmark" title="'. $announcement['post_title'] .'">'. $announcement['post_title'] .'</a></h2>';
     echo '</div>';
@@ -59,6 +60,7 @@ echo '<div class="categorymix-listing-wrapper  block white">';
   }
   foreach ($siesta_results as $siesta){
     echo '<div class="siesta-wrapper" id="post-'. $siesta['ID'] .'">';
+    echo '<div class="siesta-vertical-title">Siesta</div>';
     echo '<div class="siesta-category-title">';
     echo '<h2 class="h2"><a href="'. $siesta['permalink'] .'" rel="bookmark" title="'. $siesta['post_title'] .'">'. $siesta['post_title'] .'</a></h2>';
     echo '</div>';
@@ -71,6 +73,7 @@ echo '<div class="categorymix-listing-wrapper  block white">';
   }
   foreach ($event_results as $event){
     echo '<div class="event-wrapper" id="post-'. $event['ID'] .'">';
+    echo '<div class="event-vertical-title">Tapahtuma</div>';
     echo '<div class="event-category-title">';
     echo '<h2 class="h2"><a href="'. $event['permalink'] .'" rel="bookmark" title="'. $event['post_title'] .'">'. $event['post_title'] .'</a></h2>';
     $event_dates = (array) json_decode($event['eventdate'], true );
@@ -88,6 +91,7 @@ echo '<div class="categorymix-listing-wrapper  block white">';
   }
   foreach ($article_results as $article){
     echo '<div class="article-wrapper" id="post-'. $article['ID'] .'">';
+    echo '<div class="article-vertical-title">Artikkeli</div>';
     echo '<div class="article-category-title">';
     echo '<h2 class="h2"><a href="'. $article['permalink'] .'" rel="bookmark" title="'. $article['post_title'] .'">'. $article['post_title'] .'</a></h2>';
     echo '</div>';
