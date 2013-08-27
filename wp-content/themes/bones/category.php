@@ -73,7 +73,7 @@
 
 					</div> <!-- end #main -->
 
-          <!-- <?php get_sidebar('article'); ?> -->
+         <?php get_sidebar('categories'); ?>
 
 					<!-- <?php get_sidebar('right'); ?> -->
 
