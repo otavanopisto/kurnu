@@ -73,6 +73,12 @@ echo '<div class="categorymix-listing-wrapper  block white">';
     echo '<div class="event-wrapper" id="post-'. $event['ID'] .'">';
     echo '<div class="event-title">';
     echo '<h2 class="h2"><a href="'. $event['permalink'] .'" rel="bookmark" title="'. $event['post_title'] .'">'. $event['post_title'] .'</a></h2>';
+    $event_dates = (array) json_decode($event['eventdate'], true );
+    sort($event_dates);
+    foreach($event_dates as $date){
+      $date_string .= '<div class="event-date">'. date('d.m.', strtotime($date)) .'</div>';
+    }
+    echo $date_string;
     echo '</div>';
   
     echo '<div class="entry-content clearfix">';
