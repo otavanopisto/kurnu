@@ -97,7 +97,7 @@ function bones_register_sidebars() {
   register_sidebar(array(
     'id' => 'sidebar-article',
     'name' => __('Artikkelin sivupalkki', 'bonestheme'),
-    'description' => __('Yksittäisen artikkelin keskimmäinen sivupalkki.', 'bonestheme'),
+    'description' => __('Yksittäisen artikkelin sivupalkki.', 'bonestheme'),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h4 class="widgettitle">',
@@ -107,7 +107,7 @@ function bones_register_sidebars() {
   register_sidebar(array(
     'id' => 'sidebar-siesta',
     'name' => __('Siestan sivupalkki', 'bonestheme'),
-    'description' => __('Yksittäisen siestan keskimmäinen sivupalkki.', 'bonestheme'),
+    'description' => __('Yksittäisen siestan sivupalkki.', 'bonestheme'),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h4 class="widgettitle">',
@@ -117,7 +117,7 @@ function bones_register_sidebars() {
   register_sidebar(array(
     'id' => 'sidebar-event',
     'name' => __('Tapahtuman sivupalkki', 'bonestheme'),
-    'description' => __('Yksittäisen tapahtuman keskimmäinen sivupalkki.', 'bonestheme'),
+    'description' => __('Yksittäisen tapahtuman sivupalkki.', 'bonestheme'),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h4 class="widgettitle">',
@@ -127,7 +127,7 @@ function bones_register_sidebars() {
   register_sidebar(array(
     'id' => 'sidebar-announcement',
     'name' => __('Tiedotteen sivupalkki', 'bonestheme'),
-    'description' => __('Yksittäisen tiedotteen keskimmäinen sivupalkki.', 'bonestheme'),
+    'description' => __('Yksittäisen tiedotteen sivupalkki.', 'bonestheme'),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h4 class="widgettitle">',

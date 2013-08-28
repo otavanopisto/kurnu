@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-26 14:47+0200\n"
+"POT-Creation-Date: 2013-08-28 11:26+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -41,8 +41,6 @@ msgstr ""
 "kirjoittajana <span class=\"author\">%3$s</span>"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive-custom_type.php:19
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:49
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:185
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page-custom.php:23
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/page.php:22
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/search.php:18
@@ -136,6 +134,11 @@ msgid ""
 msgstr ""
 "Kirjoitettu <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> - "
 "kirjoittajana <span class=\"author\">%3$s</span> kategoriassa %4$s."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:49
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:205
+msgid "F j, Y"
+msgstr "F j, Y"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/archive.php:76
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/category.php:48
@@ -294,61 +297,77 @@ msgid "Artikkelin sivupalkki"
 msgstr "Artikkelin sivupalkki"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:100
-msgid "Yksittäisen artikkelin keskimmäinen sivupalkki."
-msgstr "Yksittäisen artikkelin keskimmäinen sivupalkki."
+msgid "Yksittäisen artikkelin sivupalkki."
+msgstr "Yksittäisen artikkelin sivupalkki."
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:109
 msgid "Siestan sivupalkki"
 msgstr "Siestan sivupalkki"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:110
-msgid "Yksittäisen siestan keskimmäinen sivupalkki."
-msgstr "Yksittäisen siestan keskimmäinen sivupalkki."
+msgid "Yksittäisen siestan sivupalkki."
+msgstr "Yksittäisen siestan sivupalkki."
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:119
 msgid "Tapahtuman sivupalkki"
 msgstr "Tapahtuman sivupalkki"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:120
-msgid "Yksittäisen tapahtuman keskimmäinen sivupalkki."
-msgstr "Yksittäisen tapahtuman keskimmäinen sivupalkki."
+msgid "Yksittäisen tapahtuman sivupalkki."
+msgstr "Yksittäisen tapahtuman sivupalkki."
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:129
 msgid "Tiedotteen sivupalkki"
 msgstr "Tiedotteen sivupalkki"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:130
-msgid "Yksittäisen tiedotteen keskimmäinen sivupalkki."
-msgstr "Yksittäisen tiedotteen keskimmäinen sivupalkki."
+msgid "Yksittäisen tiedotteen sivupalkki."
+msgstr "Yksittäisen tiedotteen sivupalkki."
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:184
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:139
+msgid "Kategorialistauksen sivupalkki"
+msgstr "Kategorialistauksen sivupalkki"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:140
+msgid "Kategorialistauksen sivupalkki."
+msgstr "Kategorialistauksen sivupalkki."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:149
+msgid "Artikkelin tagilistauksen sivupalkki"
+msgstr "Artikkelin tagilistauksen sivupalkki"
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:150
+msgid "Tagin mukaan listattavien artikkelien sivupalkki."
+msgstr "Tagin mukaan listattavien artikkelien sivupalkki."
+
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:204
 #, php-format
 msgid "<cite class=\"fn\">%s</cite>"
 msgstr "<cite class=\"fn\">%s</cite>"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:186
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:206
 msgid "(Edit)"
 msgstr "(Muokkaa)"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:190
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:210
 msgid "Your comment is awaiting moderation."
 msgstr "Kommenttisi odottaa hyväksyntää."
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:207
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:227
 msgid "Search for:"
 msgstr "Hae:"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:228
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:248
 msgid "Category: "
 msgstr "Artikkelit jotka ovat kategoriassa"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:236
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:255
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:13
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "Artikkelit joilla on tagi<b>%s</b>"
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:241
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/functions.php:260
 msgid "Posts By:"
 msgstr "Artikkelit jotka on kirjoittanut"
 
@@ -384,9 +403,9 @@ msgstr "Yritä uudelleen eri hakukriteerillä."
 msgid "This is the error message in the search.php template."
 msgstr "This is the error message in the search.php template."
 
-#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/sidebar.php:12
-msgid "Please activate some Widgets."
-msgstr "Aktivoi vitkuttimia."
+#: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/sidebar-tags.php:4
+msgid "Tags in Articles"
+msgstr "Artikkelien tagit"
 
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/tag.php:81
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/taxonomy-custom_cat.php:73
@@ -573,6 +592,9 @@ msgstr "Add New Custom Tag"
 #: /Users/lankinen/workspace/Kurnu/wp-content/themes/bones/library/custom-post-type.php:107
 msgid "New Custom Tag Name"
 msgstr "New Custom Tag Name"
+
+#~ msgid "Please activate some Widgets."
+#~ msgstr "Aktivoi vitkuttimia."
 
 #~ msgid "Read"
 #~ msgstr "Lue"
