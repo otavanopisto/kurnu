@@ -136,8 +136,18 @@ function bones_register_sidebars() {
   
   register_sidebar(array(
   'id' => 'sidebar-categories',
-  'name' => __('Kategoria listauksen sivupalkki', 'bonestheme'),
-  'description' => __('Kategoria listauksen sivupalkki.', 'bonestheme'),
+  'name' => __('Kategorialistauksen sivupalkki', 'bonestheme'),
+  'description' => __('Kategorialistauksen sivupalkki.', 'bonestheme'),
+  'before_widget' => '<div id="%1$s" class="widget %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h4 class="widgettitle">',
+  'after_title' => '</h4>',
+  ));
+
+  register_sidebar(array(
+  'id' => 'sidebar-tags',
+  'name' => __('Artikkelin tagilistauksen sivupalkki', 'bonestheme'),
+  'description' => __('Tagin mukaan listattavien artikkelien sivupalkki.', 'bonestheme'),
   'before_widget' => '<div id="%1$s" class="widget %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h4 class="widgettitle">',
@@ -287,6 +297,13 @@ function wysiwyg_editor($mce_buttons) {
         $mce_buttons = array_merge($tmp_buttons, array_slice($mce_buttons, $pos+1));
     }
     return $mce_buttons;
+}
+
+add_filter( 'widget_tag_cloud_args', 'my_widget_tag_cloud_args' );
+  function my_widget_tag_cloud_args( $args ) {
+    $args['smallest'] = 10;
+    $args['largest'] = 22;
+  return $args;
 }
 
 ?>

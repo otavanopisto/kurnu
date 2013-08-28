@@ -1691,11 +1691,20 @@ SIDEBARS & ASIDES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
 
-	.widgettitle {}
+	h4.widgettitle {
+	  margin:0;
+	  text-transform:uppercase;
+	  font-weight:300;
+	  font-size:1.5em;
+	  border:0;
+	}
 
 	.widget {
+	  background:#fff;
+	  padding:10px 15px;
+	  margin:0 2px 20px 2px;
 
 		ul {
 
@@ -1713,8 +1722,29 @@ SIDEBARS & ASIDES
 			}
 
 		}
+		
+		.tagcloud {
+		  text-align:center;
+		
+		  a {
+		    padding:3px 5px;
+		    display:inline-block;
+		    vertical-align:middle;
+		    
+		    &:hover {
+		      background:$bones-nav;
+		      color:$bones-nav-hover;
+		      border-radius:3px;
+		    }
+		    
+		  }
+		
+		}
 
 	}
+
+}
+	
 	
 /*********************
 SINGLES STYLES

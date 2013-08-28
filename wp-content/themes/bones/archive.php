@@ -110,7 +110,7 @@
 
 						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						<?php get_sidebar('author'); ?>
 
 								</div> <!-- end #inner-content -->
 

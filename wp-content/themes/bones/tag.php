@@ -86,7 +86,7 @@
   
   				</div> <!-- end #main -->
 
-				  <?php get_sidebar(); ?>
+				  <?php get_sidebar('tags'); ?>
 
 				</div> <!-- end #inner-content -->
 
