@@ -41,6 +41,10 @@ article.block {
   padding:10px 15px;
   margin:0 2px;
   
+  &:first-of-type {
+    border-top:2px solid #f01d4f;
+  }
+  
   &.white {
     box-shadow:none;
   }
@@ -142,6 +146,30 @@ article.block {
   background:none;
 }
 
+.single-post {
+  article.block:first-of-type {
+    border-top:2px solid #f01d4f;
+  }
+}
+
+.single-siesta {
+  article.block:first-of-type {
+    border-top:2px solid #ff9900;
+  }
+}
+
+.single-announcement {
+  article.block:first-of-type {
+    border-top:0;
+  }
+}
+
+.single-event {
+  article.block:first-of-type {
+    border-top:2px solid #0099ff;
+  }
+}
+
 /*********************
 CUSTOM BLOCK STYLES
 *********************/
@@ -205,6 +233,7 @@ SIESTA BLOCK STYLES
 
 #siesta-listing-wrapper {
   position:relative;
+    border-top:2px solid #ff9900;
   
   .siesta-current {
     
@@ -275,6 +304,7 @@ EVENTS BLOCK STYLES
 *********************/
 
 #event-listing-wrapper {
+  border-top:2px solid #0099ff;
 
   h3 {
 
@@ -406,7 +436,7 @@ STICKY BLOCK STYLES
 *********************/
 
 .sticky-listing-wrapper {
-  border-left:1px solid #5BE100;
+  border-top:2px solid #5BE100;
 
   h3 {
 
@@ -654,6 +684,7 @@ ARTICLE BLOCK STYLES
 *********************/
 
 .article-listing-wrapper {
+  border-top:2px solid #f01d4f;
   
   .article-wrapper {
     margin:0 0 20px 0;
@@ -857,44 +888,47 @@ SITE HEADER STYLES
   .twoway-navigation {
     width:100%;
     background:#fff;
+    position:relative;
+    height:100px;
   
     .twoway-navigation-kurnu,
     .twoway-navigation-forum {
-      padding:20px 0px;
-      font-size:1.6em;
       display:inline-block;
-      float:left;
-      
-      a {
-        text-decoration:none;
-        color:#fff;
-        display:inline-block;
-        margin:0 20px;
-
-        
-        span {
-          padding:10px 15px 10px 15px;
-          background:#000; 
-          display:inline-block;
-          width:auto;
-        }
-        
-      }
-      
-      span.kurnu-description,
-      span.forum-description {
-        display:none;
-      }
-      
     }
     
     .twoway-navigation-kurnu {
-      text-align:left
+      width:250px;
+      position:absolute;
+      top:5px;
+      left:5px;
+      
+      a {
+        background:url('../images/kurnu-logo.png') no-repeat;
+        background-size:auto 100%;
+        display:inline-block;
+        width:100%;
+        height:90px; 
+        text-decoration:none;
+      }
+      
     }
     
     .twoway-navigation-forum {
-      text-align:right;
       float:right;
+      width:135px;
+      position:absolute;
+      right:5px;
+      top:5px;
+      
+      a {
+        background:url('../images/kurnu-foorumi-logo.png') no-repeat;
+        background-size:auto 100%;
+        display:inline-block;
+        width:100%;
+        height:90px; 
+        text-decoration:none;
+      }
+      
     }
   
   } 

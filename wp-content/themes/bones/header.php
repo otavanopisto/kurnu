@@ -53,16 +53,12 @@
           
           <div class="twoway-navigation clearfix">
             <div class="twoway-navigation-kurnu">
-              <a href="<?php echo home_url(); ?>" rel="nofollow">
-                <span><?php bloginfo('name'); ?></span>
-                <span class="kurnu-description">Kalevankankaankoulun verkkojulkaisu</span>
+              <a href="<?php echo home_url(); ?>" rel="nofollow" title="Kalevankankaankoulun verkkolehti">
               </a> 
               
             </div>
             <div class="twoway-navigation-forum">
-              <a href="/forum" rel="nofollow">
-                <span>Foorumi</span>
-                <span class="forum-description">Verkkolehden virallinen foorumi</span>
+              <a href="/forum" rel="nofollow" title="Kalevankankaankoulun verkkolehden foorumi">
               </a>
             </div>            
           </div>
