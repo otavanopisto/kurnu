@@ -163,7 +163,7 @@ jQuery(document).ready(function(){
 });
 
 jQuery(document).ready(function(){
-  jQuery('div#siesta-listing-wrapper').swipe({swipeLeft:swipeLefto, swipeRight:swipeRighto, allowPageScroll:"horizontal"});
+  jQuery('div#siesta-listing-wrapper').swipe({swipeLeft:swipeLefto, swipeRight:swipeRighto, allowPageScroll:"auto"});
   function swipeLefto(event, swipeDirection){
     jQuery('#siesta-listing-wrapper').flip({
       direction:'rl',
