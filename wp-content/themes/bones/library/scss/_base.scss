@@ -24,6 +24,12 @@ body {
 	background:#182909;
 }
 
+@media (max-width : 768px) {
+    body.custom-background {
+        background-image: none !important;
+    }
+}
+
 header.header {
   margin-bottom:0px;
 }
