@@ -247,6 +247,32 @@ nav {
 
 } /* end .nav */
 
+/********************
+BREADCRUMB STYLES
+style a page via class
+********************/
+
+#content .breadcrumb-container {
+  padding:10px;
+  background:#fff;
+  margin:0 0 20px 0;
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  border-top:1px solid #f2f2f2;
+  
+  a, 
+  .current-crumb {
+    display:inline-block;
+    padding: 0 8px;
+    
+    b {
+      padding: 0 4px;
+      font-style:italic;
+    }
+  }
+  
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
