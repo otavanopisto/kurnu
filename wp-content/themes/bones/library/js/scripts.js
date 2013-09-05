@@ -163,65 +163,60 @@ jQuery(document).ready(function(){
 });
 
 jQuery(document).ready(function(){
-  jQuery('div#siesta-listing-wrapper').swipe({swipe:function(event, direction, distance, duration, fingerCount){
-    switch (direction) {
-    case 'left':
-      jQuery('#siesta-listing-wrapper').flip({
-        direction:'rl',
-        color: 'white',
-        speed: 150,
-        onAnimation: function(){
-          $current = jQuery('.siesta-current');
-          $next = $current.next(".siesta");
-          $next.removeClass('siesta-hidden');
-          $height = $next.css('height');
-          jQuery('#siesta-listing-wrapper').animate({height: $height,},400);
-        },
-        onEnd: function(){
-          $current = jQuery('.siesta-current');
-          $next = $current.next(".siesta");
-          if($next.length > 0){
-            $current.removeClass('siesta-current');
-            $current.addClass('siesta-hidden'); 
-            $next.addClass('siesta-current');
-            if($next.next(".siesta").length == 0){
-              jQuery('.siesta-current').find('.next-siesta').remove();
-            }
+  jQuery('div#siesta-listing-wrapper').swipe({swipeLeft:swipeLefto, swipeRight:swipeRighto, allowPageScroll:"horizontal"});
+  function swipeLefto(event, swipeDirection){
+    jQuery('#siesta-listing-wrapper').flip({
+      direction:'rl',
+      color: 'white',
+      speed: 150,
+      onAnimation: function(){
+        $current = jQuery('.siesta-current');
+        $next = $current.next(".siesta");
+        $next.removeClass('siesta-hidden');
+        $height = $next.css('height');
+        jQuery('#siesta-listing-wrapper').animate({height: $height,},400);
+      },
+      onEnd: function(){
+        $current = jQuery('.siesta-current');
+        $next = $current.next(".siesta");
+        if($next.length > 0){
+          $current.removeClass('siesta-current');
+          $current.addClass('siesta-hidden'); 
+          $next.addClass('siesta-current');
+          if($next.next(".siesta").length == 0){
+            jQuery('.siesta-current').find('.next-siesta').remove();
           }
-        },
-      });
-      break;
+        }
+      },
+    });      
+  }
 
-    case 'right':
-      jQuery('#siesta-listing-wrapper').flip({
-        direction:'lr',
-        color: 'white',
-        speed: 150,
-        onAnimation: function(){
-          $current = jQuery('.siesta-current');
-          $prev = $current.prev(".siesta");
-          $prev.removeClass('siesta-hidden');
-          $height = $prev.css('height');
-          jQuery('#siesta-listing-wrapper').animate({height: $height,},400);
-        },
-        onEnd: function(){
-          $current = jQuery('.siesta-current');
-          $prev = $current.prev(".siesta");
-          if($prev.length > 0){
-            $current.removeClass('siesta-current');
-            $current.addClass('siesta-hidden');
-            $prev.addClass('siesta-current');
-            if($prev.prev(".siesta").length == 0){
-              jQuery('.siesta-current').find('.prev-siesta').remove();
-            }
+  function swipeRighto(event, swipeDirection){
+    jQuery('#siesta-listing-wrapper').flip({
+      direction:'lr',
+      color: 'white',
+      speed: 150,
+      onAnimation: function(){
+        $current = jQuery('.siesta-current');
+        $prev = $current.prev(".siesta");
+        $prev.removeClass('siesta-hidden');
+        $height = $prev.css('height');
+        jQuery('#siesta-listing-wrapper').animate({height: $height,},400);
+      },
+      onEnd: function(){
+        $current = jQuery('.siesta-current');
+        $prev = $current.prev(".siesta");
+        if($prev.length > 0){
+          $current.removeClass('siesta-current');
+          $current.addClass('siesta-hidden');
+          $prev.addClass('siesta-current');
+          if($prev.prev(".siesta").length == 0){
+            jQuery('.siesta-current').find('.prev-siesta').remove();
           }
-        },
-      });
-      break;
-    default:
-      break;
-    }
-  }});
+        }
+      },
+    });
+  }
 });
 
 jQuery(document).ready(function(x) {
