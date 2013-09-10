@@ -891,10 +891,9 @@ SITE HEADER STYLES
   
   .twoway-navigation {
     width:100%;
-    background:#fff;
     position:relative;
     height:100px;
-    background:url('../images/kurnu-header-bg.png') no-repeat;
+    background:url('../images/kurnu-header-bg.png') no-repeat #fff;
   
     .twoway-navigation-kurnu,
     .twoway-navigation-forum {
