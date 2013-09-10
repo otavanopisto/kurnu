@@ -83,7 +83,7 @@ article.block {
       position:absolute;
       top:5px;
       right:0;
-      margin:0;
+      margin:-5px 0 0 0;
       padding:0 0 6px 0;
       background:url('../images/comments-bg.png') no-repeat 12px bottom;
       opacity:0.75;
@@ -111,7 +111,7 @@ article.block {
     margin-top:0;
     margin-bottom:0;
     text-transform:uppercase;
-    font-size:2em;
+    font-size:1.5em;
     margin-right:40px;
     
     a {
@@ -186,7 +186,7 @@ CUSTOM BLOCK STYLES
   
   h3 {
     font-family: $sans-serif-title;
-    font-size: $title-base-size;
+    font-size: 1.4em;
     margin:0;
     padding:0;
     color: #222;
@@ -414,7 +414,7 @@ ANNOUNCEMENT BLOCK STYLES
   }
   
   .announcement-title {
-    font-size:1.7em;
+    font-size:1.4em;
     font-weight:300;
     padding:1px 0;
     
@@ -894,6 +894,7 @@ SITE HEADER STYLES
     background:#fff;
     position:relative;
     height:100px;
+    background:url('../images/kurnu-header-bg.png') no-repeat;
   
     .twoway-navigation-kurnu,
     .twoway-navigation-forum {

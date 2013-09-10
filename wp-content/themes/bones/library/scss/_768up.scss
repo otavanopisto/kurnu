@@ -20,7 +20,7 @@ GENERAL STYLES
 body {
   margin:0 10px;
   background-color:#182909;
-  background-size:100% auto;
+  background-size:cover;
 }
 
 /*********************
@@ -46,7 +46,6 @@ SITE HEADER STYLES
     background:#fff;
     position:relative;
     height:139px;
-    background:url('../images/kurnu-header-bg.png') no-repeat;
   
     .twoway-navigation-kurnu,
     .twoway-navigation-forum {
@@ -93,6 +92,83 @@ SITE HEADER STYLES
 } 
 
   #logo {}
+  
+/*********************
+FONT SIZE OVERRIDES
+*********************/
+
+article.block {
+  
+  h1,h2 {
+    margin-top:0;
+    margin-bottom:0;
+    text-transform:uppercase;
+    font-size:2em;
+    margin-right:40px;
+    
+    a {
+      color:$link-color;
+
+    }
+    
+  }
+  
+  header.article-header {
+
+    p.comment-count {
+      position:absolute;
+      top:5px;
+      right:0;
+      margin:0;
+      padding:0 0 6px 0;
+      background:url('../images/comments-bg.png') no-repeat 12px bottom;
+      opacity:0.75;
+      
+      a {
+        display:inline-block;
+        padding:5px 10px;
+        background:#5BE100;
+        color:#fff;
+        border-radius:5px;
+        margin:0;
+        min-width:2.5em;
+        text-align:center;
+      }
+      
+      &:hover {
+        opacity:1;
+      }
+    }
+  }
+
+}
+
+.announcement-wrapper {
+  .announcement-title {
+    font-size:1.7em;
+    font-weight:300;
+    padding:1px 0;
+    
+    a {
+      text-decoration:none;
+    }
+  }
+}
+
+.block {
+  padding:10px 15px;
+  margin:0 2px 20px 2px;
+  
+  h3 {
+    font-family: $sans-serif-title;
+    font-size: $title-base-size;
+    margin:0;
+    padding:0;
+    color: #222;
+    font-weight:300;
+    text-transform:uppercase;
+  }
+}
 
 /*********************
 NAVIGATION STYLES
