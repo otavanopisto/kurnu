@@ -569,7 +569,12 @@ WP-UNITED WIDGETS BLOCK STYLES
          border:0;
          font-family:inherit !important;
          color:$link-color;
-       }
+        }
+        
+        p.author {
+          display:none;
+        }
+       
      }
      
      .corners-bottom,
@@ -611,9 +616,9 @@ WP-UNITED WIDGETS BLOCK STYLES
            margin:0;
 
            dt {
-             float:none;
-             padding:2px 0 2px 0;
-             width:100%;
+             float:left;
+             padding:5px 0 0 0;
+             width:90%;
              zoom: 1;
             
              &:before, &:after { content: ""; display: table; }
