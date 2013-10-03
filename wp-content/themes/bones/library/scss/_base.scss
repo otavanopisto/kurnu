@@ -22,7 +22,6 @@ body {
 	color: #565656;
 	margin:0 5px;
 	background:#182909;
-	
 }
 
 @media (max-width : 768px) {
@@ -240,7 +239,7 @@ SIESTA BLOCK STYLES
 
 #siesta-listing-wrapper {
   position:relative;
-    border-top:2px solid #ff9900;
+  border-top:2px solid #ff9900;
   
   .siesta-current {
     
@@ -300,6 +299,12 @@ SIESTA BLOCK STYLES
       
       .sidebar-siesta-excerpt {
         font-size:0.925em;
+      }
+      
+      .siesta-separator {
+        border-top:1px solid lighten(#ff9900,30%);
+        margin:15px 0 5px 0;
+        height:5px;
       }
   
   }
