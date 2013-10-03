@@ -425,7 +425,6 @@ function construct_siestas($siesta, &$siestas) {
 function get_nearest_siesta($siestas){
   $today = strtotime(date('Y-m-d', time()));
   foreach ($siestas as $date => $siesta) {
-    $event_stamp = strtotime($date);
     if ($date >= $today) return $date;
   }
   $last_siesta = end($siestas);
