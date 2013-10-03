@@ -249,6 +249,37 @@ SIESTA BLOCK STYLES
     display: none;
   }
   
+  .prev-siesta,
+  .next-siesta {
+    display:inline-block;
+    width:32px;
+    height:32px;
+    position: absolute;
+    top: 10px;
+    opacity:0.5;
+    cursor:pointer;
+    
+      a {
+        display:inline-block;
+        width:32px;
+        height:32px;
+      }
+      
+      &:hover {
+        opacity:0.75;
+      }
+    }
+    
+    .prev-siesta {
+      background:url('../images/prev.png') no-repeat center center;
+      right: 45px;
+    }
+    
+    .next-siesta {
+      background:url('../images/next.png') no-repeat center center;
+      right: 12px;
+    }
+  
   .siesta-content-wrapper {
   
       ul {
@@ -269,37 +300,6 @@ SIESTA BLOCK STYLES
       .sidebar-siesta-excerpt {
         font-size:0.925em;
       }
-      
-      .prev-siesta,
-      .next-siesta {
-        display:inline-block;
-        width:32px;
-        height:32px;
-        position: absolute;
-        top: 10px;
-        opacity:0.5;
-        cursor:pointer;
-        
-          a {
-            display:inline-block;
-            width:32px;
-            height:32px;
-          }
-          
-          &:hover {
-            opacity:0.75;
-          }
-        }
-        
-        .prev-siesta {
-          background:url('../images/prev.png') no-repeat center center;
-          right: 45px;
-        }
-        
-        .next-siesta {
-          background:url('../images/next.png') no-repeat center center;
-          right: 12px;
-        }
   
   }
 
