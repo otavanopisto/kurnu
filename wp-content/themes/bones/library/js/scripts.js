@@ -128,7 +128,10 @@ jQuery(document).ready(function(){
           $current.addClass('siesta-hidden');
           $prev.addClass('siesta-current');
           if($prev.prev(".siesta").length == 0){
-            jQuery('.siesta-current').find('.prev-siesta').remove();
+            jQuery('.prev-siesta').hide();
+          }
+          if($prev.next(".siesta").length != 0){
+            jQuery('.next-siesta').show();
           }
         }
       },
@@ -154,7 +157,10 @@ jQuery(document).ready(function(){
           $current.addClass('siesta-hidden'); 
           $next.addClass('siesta-current');
           if($next.next(".siesta").length == 0){
-            jQuery('.siesta-current').find('.next-siesta').remove();
+            jQuery('.next-siesta').hide();
+          }
+          if($next.prev(".siesta").length != 0){
+            jQuery('.prev-siesta').show();
           }
         }
       },
