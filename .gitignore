@@ -20,3 +20,4 @@ sitemap.xml.gz
 /forum/cache
 /wp-content/plugins/wp-united/cache
 *.sass-cache
+*/bones/library/css/style.css
