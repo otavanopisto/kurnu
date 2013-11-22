@@ -54,6 +54,7 @@
   }
   if($nearest < today) {
     echo '<span class="prev-siesta" title="Edellinen siesta"></span>';
+    echo '<span style="display:none;" class="next-siesta" title="Seuraava siesta"></span>';
   }else{
     echo '<span class="prev-siesta" title="Edellinen siesta"></span>';
     echo '<span class="next-siesta" title="Seuraava siesta"></span>';
