@@ -15,14 +15,47 @@ LAYOUT & GRID STYLES
 
 body {
   margin:0 10px;
+  
+  &.fixedNavigationMargin {
+    margin:49px 10px 0 10px;
+  }
 }
 
 .wrap {
-  min-width:1030px;
-  max-width:1180px
+  min-width:1180px;
+  max-width:1180px;
 }
 
 #container #wpucssmagic {
-  min-width:1030px;
+  min-width:1180px;
   max-width:1180px;
+}
+
+
+/*********************
+FIXED ELEMENTS
+*********************/
+
+nav.fixedWrapperPosition {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:9999;
+  height:49px;
+}
+
+nav.fixedWrapperPosition.ToFadeIn {
+  background:#fff;
+}
+
+.top-nav.fixedPosition {
+  position:fixed;
+  top:0;
+  z-index:9999;
+  display:block;
+  width:1180px;
+  border-bottom:1px solid #333333;
+  margin-left:-590px;
+  left:50%;
 }
