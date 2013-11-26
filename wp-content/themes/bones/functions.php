@@ -264,14 +264,6 @@ function the_breadcrumb() {
   
 }
 
-function add_siesta_category_automatically($post_ID) {
-  global $wpdb;
-  if(!wp_is_post_revision($post_ID)) {
-    wp_set_object_terms( $post_ID, 'Siestat', 'category');
-  }
-}
-add_action('publish_siesta', 'add_siesta_category_automatically');
-
 function add_announcement_category_automatically($post_ID) {
   global $wpdb;
   if(!wp_is_post_revision($post_ID)) {
