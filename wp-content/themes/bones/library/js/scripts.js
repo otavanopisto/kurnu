@@ -233,6 +233,39 @@ jQuery(document).ready(function(){
 
 jQuery(document).ready(function(x) {
 	
+	var headerHeight = jQuery('.header').outerHeight();
+	var navHeight = jQuery('.top-nav').outerHeight();
+	var aboveHeight = headerHeight - navHeight;
+
+	var fixedNavPos = false;
+	
+	// Navigations fixed position
+	jQuery(window).scroll(function() {
+		if (jQuery(window).scrollTop() > aboveHeight && fixedNavPos == false) {
+			jQuery('#inner-header > nav').addClass('fixedWrapperPosition');
+			jQuery('.fixedWrapperPosition').addClass('ToFadeIn', 500);
+			jQuery('body').addClass('fixedNavigationMargin');
+			jQuery('.top-nav').addClass('fixedPosition');
+			fixedNavPos = true;
+		} 
+		
+		if (jQuery(window).scrollTop() < aboveHeight && fixedNavPos == true)  {
+			jQuery('#inner-header > nav').removeClass('fixedWrapperPosition');
+			jQuery('#inner-header > nav').removeClass('ToFadeIn');
+			jQuery('body').removeClass('fixedNavigationMargin');
+			jQuery('.top-nav').removeClass('fixedPosition');
+			fixedNavPos = false;
+		}
+	});
+	
+	// Sets navigation to fixed when document is loaded after scrolled down a bit
+	if (jQuery(window).scrollTop() > aboveHeight && fixedNav == false) {
+		jQuery('body').addClass('fixedNavigationMargin');
+		jQuery('#inner-header > nav').addClass('fixedWrapperPosition');
+		jQuery('.fixedWrapperPosition').addClass('ToFadeIn', 500);
+		jQuery('.top-nav').addClass('fixedPosition');
+	}
+	
 	var videoWrapper = x('#vimeoRecent');
 
 	if (videoWrapper.length > 0) {

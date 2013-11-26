@@ -469,6 +469,57 @@ STICKY BLOCK STYLES
 KALIS-TV BLOCK STYLES
 *********************/
 
+.kalistv-wrapper {
+  
+  #vimeoRecent {
+    width:100%;
+    position:relative;
+    margin:10px 0 0 0;
+    
+      a {
+        position:relative;
+        display:block;
+        
+        .play-video {
+          background: url("../images/play-video.png") no-repeat scroll center center transparent;
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 99;
+          opacity:0.8;
+        }
+        
+        &:hover .play-video {
+          opacity:0.99;
+        }
+      }
+  
+    
+    iframe {
+      width:100%;
+      height:auto;
+    }
+    
+  }
+  
+  #vimeoDescription {
+    font-size:0.875em;
+    font-style:italic;
+  }
+  
+  .vimeoShowMore {
+    padding:8px 0px 4px 0px;
+    
+    a {
+      
+    }
+  
+  }
+  
+}
+
 .widget.widget_text {
   background:#fff;
   padding:10px 15px 10px 15px;
@@ -490,42 +541,17 @@ KALIS-TV BLOCK STYLES
   
 }
 
-#vimeoRecent {
-  width:100%;
-  position:relative;
-  margin:10px 0 0 0;
-  
-    a {
-      position:relative;
-      display:block;
-      
-      .play-video {
-        background: url("../images/play-video.png") no-repeat scroll center center transparent;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 99;
-        opacity:0.8;
-      }
-      
-      &:hover .play-video {
-        opacity:0.99;
-      }
-    }
+/*********************
+BAMBUSER BLOCK STYLES
+*********************/
 
+.bambuser-wrapper {
   
-  iframe {
-    width:100%;
-    height:auto;
+  #bambuserRecent {
+    margin:10px 0 0 0;
+    
   }
   
-}
-
-#vimeoDescription {
-  font-size:0.875em;
-  font-style:italic;
 }
 
 /*********************
@@ -1233,24 +1259,34 @@ PAGE NAVI STYLES
 
 .page-navigation,
 .wp-prev-next {
-	margin: 1.1em 0 2.2em;
+	margin: 0 2px 0 2px;
 }
 	.bones_page_navi {
+	  background:#fff;
+	  padding:0;
+    margin:0;
+    padding:10px;
+
 
 		li {
 			float: left;
-			margin-left: 10px;
+			margin-left: 4px;
+			min-width:30px;
+			text-align:center;
+			border-radius:5px;
 
 			a {
-				padding: 3px 6px;
+			  border-radius:5px;
+				padding: 5px;
 				display: block;
 				text-decoration: none;
 				position: relative;
 
 				&:hover,
 				&:focus {
-					color: #f01d4f;
-					text-decoration: underline;
+          background:#f01d4f;
+          position: relative;
+          color:#fff;
 				}
 			}
 
@@ -1258,11 +1294,13 @@ PAGE NAVI STYLES
 
 		/* current page link */
 		li.bpn-current {
-			padding: 3px 6px;
-			border-bottom: 2px solid #f01d4f;
+			padding: 5px;
+			background:#f01d4f;
 			position: relative;
+			color:#fff;
 
 			a {
+			  color:#fff;
 				/* hovering on current page link */
 				&:hover,
 				&:focus {}
@@ -1277,8 +1315,18 @@ PAGE NAVI STYLES
 			font-weight: 700;
 
 			a {
-				padding: 0;
-			}
+        padding: 5px;
+        display: block;
+        text-decoration: none;
+        position: relative;
+
+        &:hover,
+        &:focus {
+          background:#f01d4f;
+          position: relative;
+          color:#fff;
+        }
+      }
 		}
 
 		/* remove the bg on end links */
@@ -1286,7 +1334,7 @@ PAGE NAVI STYLES
 		li.bpn-next-link a:hover,
 		li.bpn-first-page-link a:hover,
 		li.bpn-last-page-link a:hover {
-			background: none;
+/* 			background: none; */
 		}
 
 		/* previous link */
@@ -1893,5 +1941,4 @@ PHPBB OVERRIDES
   }
   
 }
-
 
