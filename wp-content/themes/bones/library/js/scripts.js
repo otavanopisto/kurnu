@@ -235,7 +235,13 @@ jQuery(document).ready(function(x) {
 	
 	var headerHeight = jQuery('.header').outerHeight();
 	var navHeight = jQuery('.top-nav').outerHeight();
-	var aboveHeight = headerHeight - navHeight;
+	
+	if (jQuery('#wpadminbar').length > 0) {
+		jQuery('#inner-header > nav').addClass('withWPAdminBar');
+		jQuery('.top-nav').addClass('withWPAdminBar');
+	}
+	
+	var aboveHeight =  headerHeight - navHeight;
 
 	var fixedNavPos = false;
 	

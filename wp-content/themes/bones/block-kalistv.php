@@ -9,12 +9,12 @@
   
 </div>
 
-<div class="bambuser-wrapper block white">
+<!-- <div class="bambuser-wrapper block white"> -->
 
-  <h3 class="bambuser-column-title">k-Tuubi (Bambuser)</h3>
+<!--   <h3 class="bambuser-column-title">k-Tuubi (Bambuser)</h3> -->
 
-  <div id="bambuserRecent">
-    <iframe src="https://embed.bambuser.com/channel/jjlankinen?chat=0" width="246" height="419" frameborder="0">Selaimesi ei tue iframe tekniikkaa tai se on estetty.</iframe>
-  </div>
+<!--   <div id="bambuserRecent"> -->
+<!--     <iframe src="https://embed.bambuser.com/channel/jjlankinen?chat=0" width="246" height="419" frameborder="0">Selaimesi ei tue iframe tekniikkaa tai se on estetty.</iframe> -->
+<!--   </div> -->
 
-</div>
+<!-- </div> -->
