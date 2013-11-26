@@ -1,19 +1,5 @@
 <?php
-  $args = array();
-  $args['post_type'] = 'siesta';
-  $args['orderby'] = 'ID';
-  $args['limit'] = 50;
-  $args['meta_key'] = 'eventdate';
-  
-  $Q = new GetPostsQuery($args);
-  $results = $Q->get_posts();
-  
-  // The Loop
-  $siestas = array();
-  foreach ($results as $siesta){
-    construct_siestas($siesta, $siestas);    
-  }
-  ksort($siestas);
+  $siestas = get_siestas();
   $nearest = get_nearest_siesta($siestas);
   echo '<div id="siesta-listing-wrapper" class="block white">';
   $siestaArrayObject = new ArrayObject($siestas);
@@ -26,15 +12,15 @@
     echo '<div class="'. $magic .' siesta">';
     echo '<div class="siesta-content-wrapper">';
     echo '<h3 class="siesta-column-title">Siestalla ' . $formatted_date . '</h3>';
-    echo '<div class="sidebar-siesta-title"><a href="'. $single_siesta['permalink'] .'">' . $single_siesta['post_title'] . '</a></div>';
-    echo '<div class="sidebar-siesta-excerpt">' . $single_siesta['post_excerpt'] . '</div>';    
+    echo '<div class="sidebar-siesta-title"><a href="'. $single_siesta['guid'] . $single_siesta['id'] . '">' . $single_siesta['post_title'] . '</a></div>';
+    echo '<div class="sidebar-siesta-excerpt">' . $single_siesta['post_content'] . '</div>';    
     $next_key = $iterator->key() + 1;
     if($iterator->offsetExists($next_key)){
       echo '<div class="siesta-separator"></div>';
       $iterator->next();
       $single_siesta = $iterator->current();
       $formatted_date = date('d.m.', $iterator->key());
-      echo '<div class="sidebar-siesta-title"><a href="'. $single_siesta['permalink'] .'">' . $single_siesta['post_title'] . '</a></div>';
+      echo '<div class="sidebar-siesta-title"><a href="'. $single_siesta['guid'] . $single_siesta['id'] . '">' . $single_siesta['post_title'] . '</a></div>';
       echo '<div class="sidebar-siesta-excerpt">' . $single_siesta['post_excerpt'] . '</div>';
     }
     echo '</div>';

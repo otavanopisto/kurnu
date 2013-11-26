@@ -165,9 +165,9 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'jquery-ui-flip' );
     wp_enqueue_script( 'jquery-touchswipe' );
     add_thickbox();
-
-    wp_register_style( 'hacks', get_stylesheet_directory_uri() . '/library/css/hacks.css', array(), '', 'all');
-    wp_enqueue_style( 'hacks' );
+//     Hackc stylesheet enable. Use only in development.
+//     wp_register_style( 'hacks', get_stylesheet_directory_uri() . '/library/css/hacks.css', array(), '', 'all');
+//     wp_enqueue_style( 'hacks' );
 
   }
 }
@@ -410,27 +410,72 @@ function bones_get_the_author_posts_link() {
 	return $link;
 }
 
-function construct_siestas($siesta, &$siestas) {
-  $event_dates = (array) json_decode($siesta['eventdate'], true );
-  foreach($event_dates as $date){
-    $siesta['eventdate'] = $date;
-    $event_stamp = strtotime($date);
-    if(array_key_exists($event_stamp, $siestas)){
-      $event_stamp = $event_stamp + 1;
-    }
-    $siestas[$event_stamp] = $siesta;
+function get_siestas(){
+  global $wpdb;
+  $five_days = 5 * 24 * 60 * 60;
+  $start_date = date('Y-m-d 00:00:00', time() - $five_days);
+  $end_date = date('Y-m-d 00:00:00', time() + $five_days);
+  $siestaResults = $wpdb->get_results('SELECT p.ID,p.guid,p.post_content, p.post_title, ei.id, ei.start FROM wp_posts p
+        LEFT JOIN wp_ai1ec_event_instances ei ON p.ID = ei.post_id WHERE p.ID IN
+          (SELECT ein.post_id FROM wp_ai1ec_event_instances ein WHERE ein.start > "'. $start_date .'" AND ein.start < "'. $end_date .'") ORDER BY ei.start', ARRAY_A);
+  
+  // Loop
+  $siestas = array();
+  foreach ($siestaResults as $siesta){
+    build_siesta_array($siesta, $siestas);
   }
+  ksort($siestas);
+  $siestas = array_filter($siestas, 'siesta_five_day_filter');
+  return $siestas;
 }
 
+/**
+ * 
+ * @param array $siesta single siesta instance
+ * @param array &$siestas reference to array containing all siestas
+ */
+function build_siesta_array($siesta, &$siestas) {
+  $event_stamp = strtotime($siesta['start']);
+  $siesta['stamp'] = $event_stamp;
+  if(array_key_exists($event_stamp, $siestas)){
+    $event_stamp = $event_stamp + 1;
+  }
+  $siestas[$event_stamp] = $siesta;
+}
+
+/**
+ *
+ * @param array $siestas array containing all siestas
+ */
 function get_nearest_siesta($siestas){
   $today = strtotime(date('Y-m-d', time()));
   foreach ($siestas as $date => $siesta) {
     if ($date >= $today) return $date;
   }
   $last_siesta = end($siestas);
-  return $last_siesta['eventdate'];
+  return $last_siesta['start'];
 }
 
+/**
+ * Ment to be used as array filter
+ * @param array $siestas array containing all siestas
+ */
+function siesta_five_day_filter($siesta){
+  $five_days = 5 * 24 * 60 * 60;  
+  $today = time();
+  if($siesta['stamp'] < ($today - $five_days)){
+    return false;
+  }elseif ($siesta['stamp'] > ($today + $five_days)){
+    return false;
+  }
+  return true;
+}
+
+/**
+ *
+ * @param array $event single event
+ * @param array $events reference to array containing all events
+ */
 function construct_events($event, &$events) {
   $today = strtotime(date('Y-m-d', time()));
   $event_dates = (array) json_decode($event['eventdate'], true );
