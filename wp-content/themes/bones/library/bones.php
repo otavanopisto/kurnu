@@ -412,9 +412,10 @@ function bones_get_the_author_posts_link() {
 
 function get_siestas(){
   global $wpdb;
-  $five_days = 5 * 24 * 60 * 60;
-  $start_date = date('Y-m-d 00:00:00', time() - $five_days);
-  $end_date = date('Y-m-d 00:00:00', time() + $five_days);
+  $three_days = 3 * 24 * 60 * 60;
+  $seven_days = 7 * 24 * 60 * 60;
+  $start_date = date('Y-m-d 00:00:00', time() - $three_days);
+  $end_date = date('Y-m-d 00:00:00', time() + $seven_days);
   $siestaResults = $wpdb->get_results('SELECT p.ID,p.guid,p.post_content, p.post_title, ei.id, ei.start FROM wp_posts p
         LEFT JOIN wp_ai1ec_event_instances ei ON p.ID = ei.post_id WHERE p.ID IN
           (SELECT ein.post_id FROM wp_ai1ec_event_instances ein WHERE ein.start > "'. $start_date .'" AND ein.start < "'. $end_date .'") ORDER BY ei.start', ARRAY_A);
@@ -425,7 +426,7 @@ function get_siestas(){
     build_siesta_array($siesta, $siestas);
   }
   ksort($siestas);
-  $siestas = array_filter($siestas, 'siesta_five_day_filter');
+  $siestas = array_filter($siestas, 'siesta_filter');
   return $siestas;
 }
 
@@ -460,12 +461,13 @@ function get_nearest_siesta($siestas){
  * Ment to be used as array filter
  * @param array $siestas array containing all siestas
  */
-function siesta_five_day_filter($siesta){
-  $five_days = 5 * 24 * 60 * 60;  
+function siesta_filter($siesta){
+  $three_days = 3 * 24 * 60 * 60;
+  $seven_days = 7 * 24 * 60 * 60;  
   $today = time();
-  if($siesta['stamp'] < ($today - $five_days)){
+  if($siesta['stamp'] < ($today - $three_days)){
     return false;
-  }elseif ($siesta['stamp'] > ($today + $five_days)){
+  }elseif ($siesta['stamp'] > ($today + $seven_days)){
     return false;
   }
   return true;
